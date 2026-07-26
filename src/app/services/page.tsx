@@ -58,6 +58,20 @@ export default function Services() {
 				</nav>
 			</header>
 
+			{/* Header Section */}
+			<section className='bg-[#9ba89f] py-20 px-6'>
+				<div className='max-w-4xl mx-auto'>
+					<p className='text-[#c4b5a0] text-xs font-light tracking-widest uppercase mb-4'>
+						What We Offer
+					</p>
+					<div className='border-b border-[#c4b5a0] w-12 mb-6' />
+					<h1 className='font-serif text-5xl font-light text-white mb-4'>Services & Pricing</h1>
+					<p className='text-lg font-light text-white opacity-90'>
+						Every treatment is customized to your skin. Tuesday – Saturday by appointment.
+					</p>
+				</div>
+			</section>
+
 			{/* Services Section */}
 			<main className='max-w-4xl mx-auto px-6 py-16'>
 				<h1 className='font-serif text-4xl font-light mb-12'>Facials & Clinical Treatments</h1>
