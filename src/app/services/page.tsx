@@ -71,12 +71,12 @@ export default function Services() {
 			</header>
 
 			{/* Header Section */}
-			<section className='bg-[#9ba89f] py-20 px-6'>
+			<section className='bg-[#9ba89f] py-16 px-6'>
 				<div className='max-w-4xl mx-auto'>
-					<p className='text-[#a89682] text-xs font-light tracking-widest uppercase mb-4'>
+					{/* <p className='text-[#a89682] text-xs font-light tracking-widest uppercase mb-4'>
 						What I Offer
 					</p>
-					<div className='border-b border-[#a89682] w-12 mb-6' />
+					<div className='border-b border-[#a89682] w-12 mb-6' /> */}
 					<h1 className='font-serif text-5xl font-light text-white mb-4'>
 						Services & Pricing
 					</h1>
@@ -98,13 +98,13 @@ export default function Services() {
 							<div className='flex items-start justify-between mb-3'>
 								<div>
 									<h2 className='font-serif text-2xl font-light'>
-										"{service.name}" — {service.subtitle}
+										&ldquo;{service.name}&ldquo; — {service.subtitle}
 									</h2>
-									<p className='text-xs font-light text-[#c4b5a0] tracking-widest mt-2 uppercase'>
+									<p className='text-xs font-light text-[#aea292] tracking-widest mt-2 uppercase'>
 										{service.duration}
 									</p>
 								</div>
-								<p className='font-serif text-3xl font-light text-[#c4b5a0]'>
+								<p className='font-serif text-3xl font-light text-[#aea292]'>
 									{service.price}
 								</p>
 							</div>
@@ -118,6 +118,33 @@ export default function Services() {
 					))}
 				</div>
 			</main>
+
+			{/* CTA Section */}
+			<section className='bg-[#3d3d3d] py-20 px-6'>
+				<div className='max-w-3xl mx-auto text-center'>
+					<div className='flex justify-center mb-6'>
+						<div className='w-12 border-b-2 border-[#c4b5a0]' />
+					</div>
+					<h2 className='font-serif text-4xl font-light text-white mb-4'>Ready to Book?</h2>
+					<p className='text-lg font-light text-white opacity-90 mb-10'>
+						Contact me if you're ready to book or have questions.
+					</p>
+					<div className='flex gap-4 justify-center'>
+						<Link
+							href='/contact'
+							className='bg-[#c4b5a0] hover:bg-[#b5a690] transition text-white font-light px-8 py-3 uppercase tracking-wider text-sm'
+						>
+							Contact Me
+						</Link>
+						<a
+							href='tel:(555)123-4567'
+							className='border border-[#c4b5a0] hover:bg-[#c4b5a0] hover:text-[#3d3d3d] transition text-white font-light px-8 py-3 uppercase tracking-wider text-sm'
+						>
+							Call to Book
+						</a>
+					</div>
+				</div>
+			</section>
 
 			{/* Footer */}
 			<footer className='border-t border-[#b5a690] bg-[#f5f3f0] py-12 px-6 text-center text-neutral-800 mt-16'>
