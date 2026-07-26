@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
 	return (
@@ -33,11 +34,16 @@ export default function Home() {
 			{/* Hero Section */}
 			<main className='max-w-7xl mx-auto px-6 py-16'>
 				<div className='grid grid-cols-2 gap-12 items-center'>
-					{/* Image Placeholder */}
+					{/* Image */}
 					<div className='flex justify-center'>
-						<div className='w-full aspect-square bg-[#c4b5a0] rounded flex items-center justify-center'>
-							<span className='text-[#a8b5a3]'>Portrait placeholder</span>
-						</div>
+						<Image
+							src='/skincare.jpg'
+							alt='Renée Skin Care professional portrait'
+							width={500}
+							height={500}
+							className='w-full h-auto rounded'
+							priority
+						/>
 					</div>
 
 					{/* Content */}
