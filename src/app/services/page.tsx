@@ -73,10 +73,10 @@ export default function Services() {
 			{/* Header Section */}
 			<section className='bg-[#9ba89f] py-20 px-6'>
 				<div className='max-w-4xl mx-auto'>
-					<p className='text-white text-xs font-light tracking-widest uppercase mb-4'>
+					<p className='text-[#a89682] text-xs font-light tracking-widest uppercase mb-4'>
 						What I Offer
 					</p>
-					<div className='border-b border-white w-12 mb-6' />
+					<div className='border-b border-[#a89682] w-12 mb-6' />
 					<h1 className='font-serif text-5xl font-light text-white mb-4'>
 						Services & Pricing
 					</h1>
