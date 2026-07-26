@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<div className='min-h-screen bg-neutral-900 text-white'>
+		<div className='min-h-screen bg-[#e8e3de] text-[#5a5653]'>
 			{/* Header */}
-			<header className='border-b border-neutral-800'>
+			<header className='border-b border-[#c9b89a]'>
 				<nav className='max-w-7xl mx-auto px-6 py-6 flex items-center justify-between'>
 					<div className='font-serif text-2xl font-light'>Renée Skin Care</div>
 					<div className='flex gap-8'>
@@ -35,8 +35,8 @@ export default function Home() {
 				<div className='grid grid-cols-2 gap-12 items-center'>
 					{/* Image Placeholder */}
 					<div className='flex justify-center'>
-						<div className='w-full aspect-square bg-neutral-700 rounded flex items-center justify-center'>
-							<span className='text-neutral-500'>Portrait placeholder</span>
+						<div className='w-full aspect-square bg-[#c9b89a] rounded flex items-center justify-center'>
+							<span className='text-[#9db3a3]'>Portrait placeholder</span>
 						</div>
 					</div>
 
@@ -77,32 +77,32 @@ export default function Home() {
 			</main>
 
 			{/* Testimonial Section */}
-			<section className='bg-neutral-200 py-10 px-6'>
+			<section className='bg-[#9db3a3] py-10 px-6'>
 				<div className='max-w-4xl mx-auto text-center'>
-					<p className='font-serif text-3xl italic font-light leading-relaxed text-neutral-900 mb-6'>
+					<p className='font-serif text-3xl italic font-light leading-relaxed text-white mb-6'>
 						&ldquo;My clients are extremely loyal due to exemplary results,
 						customer service and personal attention unique to each
 						client.&rdquo;
 					</p>
-					<p className='text-sm font-light text-neutral-700 uppercase tracking-wide'>
+					<p className='text-sm font-light text-white uppercase tracking-wide'>
 						— Renée, Licensed Aesthetician
 					</p>
 				</div>
 			</section>
 
 			{/* Footer */}
-			<footer className='bg-neutral-950 border-t border-neutral-800 py-12 px-6 text-center'>
+			<footer className='bg-[#d4a574] border-t border-[#c9b89a] py-12 px-6 text-center'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='mb-8'>
-						<h3 className='font-serif text-sm font-light mb-2'>Contact</h3>
-						<p className='text-sm text-neutral-400 font-light'>
+						<h3 className='font-serif text-sm font-light mb-2 text-white'>Contact</h3>
+						<p className='text-sm text-white font-light'>
 							Email: hello@reneeskincare.com
 						</p>
-						<p className='text-sm text-neutral-400 font-light'>
+						<p className='text-sm text-white font-light'>
 							Phone: (555) 123-4567
 						</p>
 					</div>
-					<div className='border-t border-neutral-800 pt-6 text-xs text-neutral-500 font-light'>
+					<div className='border-t border-[#c9b89a] pt-6 text-xs text-white font-light'>
 						<p>&copy; 2026 Renée Skin Care. All rights reserved.</p>
 					</div>
 				</div>
