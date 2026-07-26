@@ -3,8 +3,8 @@ export default function Home() {
     <div className="min-h-screen bg-neutral-900 text-white">
       {/* Header */}
       <header className="border-b border-neutral-800">
-        <nav className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-          <div className="font-serif text-2xl font-light">Renée Skin Care</div>
+        <nav className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-center relative">
+          <div className="absolute left-6 font-serif text-2xl font-light">Renée Skin Care</div>
           <div className="flex gap-8">
             <a href="#" className="text-sm font-light hover:opacity-80 transition">
               Home
