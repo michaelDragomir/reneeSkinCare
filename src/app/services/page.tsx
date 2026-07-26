@@ -120,29 +120,14 @@ export default function Services() {
 			</main>
 
 			{/* CTA Section */}
-			<section className='bg-[#3d3d3d] py-20 px-6'>
+			<section className='bg-[#3d3d3d] py-16 px-6'>
 				<div className='max-w-3xl mx-auto text-center'>
 					<div className='flex justify-center mb-6'>
 						<div className='w-12 border-b-2 border-[#c4b5a0]' />
 					</div>
-					<h2 className='font-serif text-4xl font-light text-white mb-4'>Ready to Book?</h2>
-					<p className='text-lg font-light text-white opacity-90 mb-10'>
-						Contact me if you're ready to book or have questions.
-					</p>
-					<div className='flex gap-4 justify-center'>
-						<Link
-							href='/contact'
-							className='bg-[#c4b5a0] hover:bg-[#b5a690] transition text-white font-light px-8 py-3 uppercase tracking-wider text-sm'
-						>
-							Contact Me
-						</Link>
-						<a
-							href='tel:(555)123-4567'
-							className='border border-[#c4b5a0] hover:bg-[#c4b5a0] hover:text-[#3d3d3d] transition text-white font-light px-8 py-3 uppercase tracking-wider text-sm'
-						>
-							Call to Book
-						</a>
-					</div>
+					<h2 className='font-serif text-4xl font-light text-white'>
+						Ready to Book? Have Questions?
+					</h2>
 				</div>
 			</section>
 
