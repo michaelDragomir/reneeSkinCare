@@ -10,19 +10,19 @@ export default function Home() {
 					<div className='flex gap-8'>
 						<Link
 							href='/'
-							className='text-sm font-light hover:opacity-80 transition'
+							className='text-md font-light hover:opacity-80 transition'
 						>
 							Home
 						</Link>
 						<Link
 							href='/services'
-							className='text-sm font-light hover:opacity-80 transition'
+							className='text-md font-light hover:opacity-80 transition'
 						>
 							Services
 						</Link>
 						<Link
 							href='/contact'
-							className='text-sm font-light hover:opacity-80 transition'
+							className='text-md font-light hover:opacity-80 transition'
 						>
 							Contact
 						</Link>
@@ -75,6 +75,18 @@ export default function Home() {
 					</div>
 				</div>
 			</main>
+
+			{/* Testimonial Section */}
+			<section className='bg-neutral-200 py-16 px-6'>
+				<div className='max-w-4xl mx-auto text-center'>
+					<p className='font-serif text-3xl italic font-light leading-relaxed text-neutral-900 mb-6'>
+						"My clients are extremely loyal due to exemplary results, customer service and personal attention unique to each client."
+					</p>
+					<p className='text-sm font-light text-neutral-700 uppercase tracking-wide'>
+						— Renée, Licensed Aesthetician
+					</p>
+				</div>
+			</section>
 		</div>
 	);
 }
