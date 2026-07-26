@@ -6,24 +6,24 @@ export default function Home() {
 		<div className='min-h-screen bg-[#f5f3f0] text-[#4a4a48]'>
 			{/* Header */}
 			<header className='border-b border-[#c4b5a0]'>
-				<nav className='max-w-7xl mx-auto px-6 py-6 flex items-center justify-between'>
+				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
 					<div className='font-serif text-2xl font-light'>Renée Skin Care</div>
-					<div className='flex gap-8'>
+					<div className='flex gap-8 tracking-wider'>
 						<Link
 							href='/'
-							className='text-md font-light hover:opacity-80 transition'
+							className='text-md font-light hover:opacity-60 transition'
 						>
 							Home
 						</Link>
 						<Link
 							href='/services'
-							className='text-md font-light hover:opacity-80 transition'
+							className='text-md font-light hover:opacity-60 transition'
 						>
 							Services
 						</Link>
 						<Link
 							href='/contact'
-							className='text-md font-light hover:opacity-80 transition'
+							className='text-md font-light hover:opacity-60 transition'
 						>
 							Contact
 						</Link>
@@ -97,20 +97,15 @@ export default function Home() {
 			</section>
 
 			{/* Footer */}
-			<footer className='bg-[#c4b5a0] border-t border-[#b5a690] py-12 px-6 text-center'>
-				<div className='max-w-7xl mx-auto'>
+			<footer className='border-t border-[#b5a690] bg-[#f5f3f0] py-12 px-6 text-center text-neutral-800'>
+				<div className='max-w-7xl mx-auto text-neutral-800 tracking-wider'>
 					<div className='mb-8'>
-						<h3 className='font-serif text-sm font-light mb-2 text-white'>
-							Contact
-						</h3>
-						<p className='text-sm text-white font-light'>
+						<p className='text-md text-neutral-800'>
 							Email: hello@reneeskincare.com
 						</p>
-						<p className='text-sm text-white font-light'>
-							Phone: (555) 123-4567
-						</p>
+						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>
-					<div className='border-t border-[#b5a690] pt-6 text-xs text-white font-light'>
+					<div className='border-t border-[#b5a690] pt-6 text-xs text-neutral-800'>
 						<p>&copy; 2026 Renée Skin Care. All rights reserved.</p>
 					</div>
 				</div>
