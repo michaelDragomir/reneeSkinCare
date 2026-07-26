@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function Home() {
 	return (
-		<div className='min-h-screen bg-[#e8e3de] text-[#5a5653]'>
+		<div className='min-h-screen bg-[#f5f3f0] text-[#4a4a48]'>
 			{/* Header */}
-			<header className='border-b border-[#c9b89a]'>
+			<header className='border-b border-[#c4b5a0]'>
 				<nav className='max-w-7xl mx-auto px-6 py-6 flex items-center justify-between'>
 					<div className='font-serif text-2xl font-light'>Renée Skin Care</div>
 					<div className='flex gap-8'>
@@ -35,8 +35,8 @@ export default function Home() {
 				<div className='grid grid-cols-2 gap-12 items-center'>
 					{/* Image Placeholder */}
 					<div className='flex justify-center'>
-						<div className='w-full aspect-square bg-[#c9b89a] rounded flex items-center justify-center'>
-							<span className='text-[#9db3a3]'>Portrait placeholder</span>
+						<div className='w-full aspect-square bg-[#c4b5a0] rounded flex items-center justify-center'>
+							<span className='text-[#a8b5a3]'>Portrait placeholder</span>
 						</div>
 					</div>
 
@@ -46,11 +46,11 @@ export default function Home() {
 							Renée Skin Care
 						</h1>
 
-						<p className='text-lg font-light text-neutral-300'>
+						<p className='text-lg font-light text-neutral-800 tracking-wide'>
 							Licensed Aesthetician | Integrative Skincare Specialist
 						</p>
 
-						<div className='space-y-4 text-lg font-light tracking-wide leading-relaxed text-neutral-200'>
+						<div className='space-y-4 text-lg text-neutral-800 tracking-wide leading-relaxed text-neutral-200'>
 							<p>
 								Licensed and practicing skincare since 1996, with advanced
 								training in both medical and holistic skincare. With over 25
@@ -77,7 +77,7 @@ export default function Home() {
 			</main>
 
 			{/* Testimonial Section */}
-			<section className='bg-[#9db3a3] py-10 px-6'>
+			<section className='bg-[#a8b5a3] py-10 px-6'>
 				<div className='max-w-4xl mx-auto text-center'>
 					<p className='font-serif text-3xl italic font-light leading-relaxed text-white mb-6'>
 						&ldquo;My clients are extremely loyal due to exemplary results,
@@ -91,10 +91,12 @@ export default function Home() {
 			</section>
 
 			{/* Footer */}
-			<footer className='bg-[#d4a574] border-t border-[#c9b89a] py-12 px-6 text-center'>
+			<footer className='bg-[#c4b5a0] border-t border-[#b5a690] py-12 px-6 text-center'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='mb-8'>
-						<h3 className='font-serif text-sm font-light mb-2 text-white'>Contact</h3>
+						<h3 className='font-serif text-sm font-light mb-2 text-white'>
+							Contact
+						</h3>
 						<p className='text-sm text-white font-light'>
 							Email: hello@reneeskincare.com
 						</p>
@@ -102,7 +104,7 @@ export default function Home() {
 							Phone: (555) 123-4567
 						</p>
 					</div>
-					<div className='border-t border-[#c9b89a] pt-6 text-xs text-white font-light'>
+					<div className='border-t border-[#b5a690] pt-6 text-xs text-white font-light'>
 						<p>&copy; 2026 Renée Skin Care. All rights reserved.</p>
 					</div>
 				</div>
