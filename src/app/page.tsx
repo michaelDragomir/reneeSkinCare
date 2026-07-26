@@ -93,31 +93,14 @@ export default function Home() {
 			{/* Footer */}
 			<footer className='bg-neutral-950 border-t border-neutral-800 py-12 px-6'>
 				<div className='max-w-7xl mx-auto'>
-					<div className='grid grid-cols-3 gap-8 mb-8'>
-						<div>
-							<h3 className='font-serif text-sm font-light mb-4'>Contact</h3>
-							<p className='text-sm text-neutral-400 font-light'>
-								Email: hello@reneeskincare.com
-							</p>
-							<p className='text-sm text-neutral-400 font-light'>
-								Phone: (555) 123-4567
-							</p>
-						</div>
-						<div>
-							<h3 className='font-serif text-sm font-light mb-4'>Location</h3>
-							<p className='text-sm text-neutral-400 font-light'>
-								123 Wellness Ave<br />
-								San Francisco, CA 94105
-							</p>
-						</div>
-						<div>
-							<h3 className='font-serif text-sm font-light mb-4'>Hours</h3>
-							<p className='text-sm text-neutral-400 font-light'>
-								Mon - Fri: 10am - 6pm<br />
-								Sat: 10am - 4pm<br />
-								Sun: Closed
-							</p>
-						</div>
+					<div className='mb-8'>
+						<h3 className='font-serif text-sm font-light mb-4'>Contact</h3>
+						<p className='text-sm text-neutral-400 font-light'>
+							Email: hello@reneeskincare.com
+						</p>
+						<p className='text-sm text-neutral-400 font-light'>
+							Phone: (555) 123-4567
+						</p>
 					</div>
 					<div className='border-t border-neutral-800 pt-6 text-center text-xs text-neutral-500 font-light'>
 						<p>&copy; 2026 Renée Skin Care. All rights reserved.</p>
