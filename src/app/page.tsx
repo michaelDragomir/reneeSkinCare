@@ -39,9 +39,9 @@ export default function Home() {
 						<Image
 							src='/skincare.jpg'
 							alt='Renée Skin Care professional portrait'
-							width={500}
-							height={500}
-							className='w-full h-auto rounded'
+							width={400}
+							height={400}
+							className='w-4/5 h-auto rounded'
 							priority
 						/>
 					</div>
