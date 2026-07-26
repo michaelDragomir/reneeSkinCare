@@ -77,7 +77,7 @@ export default function Home() {
 			</main>
 
 			{/* Testimonial Section */}
-			<section className='bg-neutral-200 py-16 px-6'>
+			<section className='bg-neutral-200 py-10 px-6'>
 				<div className='max-w-4xl mx-auto text-center'>
 					<p className='font-serif text-3xl italic font-light leading-relaxed text-neutral-900 mb-6'>
 						&ldquo;My clients are extremely loyal due to exemplary results,
@@ -91,10 +91,10 @@ export default function Home() {
 			</section>
 
 			{/* Footer */}
-			<footer className='bg-neutral-950 border-t border-neutral-800 py-12 px-6'>
+			<footer className='bg-neutral-950 border-t border-neutral-800 py-12 px-6 text-center'>
 				<div className='max-w-7xl mx-auto'>
 					<div className='mb-8'>
-						<h3 className='font-serif text-sm font-light mb-4'>Contact</h3>
+						<h3 className='font-serif text-sm font-light mb-2'>Contact</h3>
 						<p className='text-sm text-neutral-400 font-light'>
 							Email: hello@reneeskincare.com
 						</p>
@@ -102,7 +102,7 @@ export default function Home() {
 							Phone: (555) 123-4567
 						</p>
 					</div>
-					<div className='border-t border-neutral-800 pt-6 text-center text-xs text-neutral-500 font-light'>
+					<div className='border-t border-neutral-800 pt-6 text-xs text-neutral-500 font-light'>
 						<p>&copy; 2026 Renée Skin Care. All rights reserved.</p>
 					</div>
 				</div>
