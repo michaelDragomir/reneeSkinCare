@@ -41,17 +41,29 @@ export default function Services() {
 			{/* Header */}
 			<header className='border-b border-[#c4b5a0]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
-					<Link href='/' className='font-serif text-2xl font-light hover:opacity-80 transition'>
+					<Link
+						href='/'
+						className='font-serif text-2xl font-light hover:opacity-80 transition'
+					>
 						Renée Skin Care
 					</Link>
 					<div className='flex gap-8 tracking-wider'>
-						<Link href='/' className='text-md font-light hover:opacity-60 transition'>
+						<Link
+							href='/'
+							className='text-md font-light hover:opacity-60 transition'
+						>
 							Home
 						</Link>
-						<Link href='/services' className='text-md font-light hover:opacity-60 transition'>
+						<Link
+							href='/services'
+							className='text-md font-light hover:opacity-60 transition'
+						>
 							Services
 						</Link>
-						<Link href='/contact' className='text-md font-light hover:opacity-60 transition'>
+						<Link
+							href='/contact'
+							className='text-md font-light hover:opacity-60 transition'
+						>
 							Contact
 						</Link>
 					</div>
@@ -61,20 +73,24 @@ export default function Services() {
 			{/* Header Section */}
 			<section className='bg-[#9ba89f] py-20 px-6'>
 				<div className='max-w-4xl mx-auto'>
-					<p className='text-[#c4b5a0] text-xs font-light tracking-widest uppercase mb-4'>
-						What We Offer
+					<p className='text-white text-xs font-light tracking-widest uppercase mb-4'>
+						What I Offer
 					</p>
-					<div className='border-b border-[#c4b5a0] w-12 mb-6' />
-					<h1 className='font-serif text-5xl font-light text-white mb-4'>Services & Pricing</h1>
+					<div className='border-b border-white w-12 mb-6' />
+					<h1 className='font-serif text-5xl font-light text-white mb-4'>
+						Services & Pricing
+					</h1>
 					<p className='text-lg font-light text-white opacity-90'>
-						Every treatment is customized to your skin. Tuesday – Saturday by appointment.
+						Every treatment is customized to your skin.
 					</p>
 				</div>
 			</section>
 
 			{/* Services Section */}
 			<main className='max-w-4xl mx-auto px-6 py-16'>
-				<h1 className='font-serif text-4xl font-light mb-12'>Facials & Clinical Treatments</h1>
+				<h1 className='font-serif text-4xl font-light mb-12'>
+					Facials & Clinical Treatments
+				</h1>
 
 				<div className='space-y-8'>
 					{services.map((service, index) => (
@@ -88,12 +104,16 @@ export default function Services() {
 										{service.duration}
 									</p>
 								</div>
-								<p className='font-serif text-3xl font-light text-[#c4b5a0]'>{service.price}</p>
+								<p className='font-serif text-3xl font-light text-[#c4b5a0]'>
+									{service.price}
+								</p>
 							</div>
 							<p className='text-base font-light leading-relaxed text-[#4a4a48] mb-6'>
 								{service.description}
 							</p>
-							{index < services.length - 1 && <div className='border-b border-[#c4b5a0]' />}
+							{index < services.length - 1 && (
+								<div className='border-b border-[#c4b5a0]' />
+							)}
 						</div>
 					))}
 				</div>
@@ -103,7 +123,9 @@ export default function Services() {
 			<footer className='border-t border-[#b5a690] bg-[#f5f3f0] py-12 px-6 text-center text-neutral-800 mt-16'>
 				<div className='max-w-7xl mx-auto text-neutral-800 tracking-wider'>
 					<div className='mb-8'>
-						<p className='text-md text-neutral-800'>Email: hello@reneeskincare.com</p>
+						<p className='text-md text-neutral-800'>
+							Email: hello@reneeskincare.com
+						</p>
 						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>
 					<div className='border-t border-[#b5a690] pt-6 text-xs text-neutral-800'>
