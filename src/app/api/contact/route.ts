@@ -15,9 +15,17 @@ export async function POST(request: NextRequest) {
 			);
 		}
 
+		const contactEmail = process.env.CONTACT_EMAIL;
+		if (!contactEmail) {
+			return NextResponse.json(
+				{ error: 'Server configuration error' },
+				{ status: 500 }
+			);
+		}
+
 		const response = await resend.emails.send({
 			from: 'Contact Form <onboarding@resend.dev>',
-			to: process.env.CONTACT_EMAIL || 'michael@blackmountainig.com',
+			to: contactEmail,
 			replyTo: email,
 			subject: subject || `New message from ${name}`,
 			html: `

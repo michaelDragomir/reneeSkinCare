@@ -89,44 +89,33 @@ export default function Contact() {
 			{/* Header Section */}
 			<section className='bg-[#9ba89f] py-16 px-6'>
 				<div className='max-w-4xl mx-auto'>
-					<p className='text-[#a89682] text-xs font-light tracking-widest uppercase mb-4'>
-						Let's Connect
+					<h1 className='font-serif text-5xl font-light text-white mb-4'>
+						Get in Touch
+					</h1>
+					<p className='text-lg font-light text-white opacity-90 tracking-wide'>
+						Have questions or ready to book? I&apos;d love to hear from you.
 					</p>
-					<div className='border-b border-[#a89682] w-12 mb-6' />
-					<h1 className='font-serif text-5xl font-light text-white mb-4'>Get in Touch</h1>
-					<p className='text-lg font-light text-white opacity-90'>
-						Have questions or ready to book? I'd love to hear from you.
-					</p>
-				</div>
-			</section>
-
-		{/* Main */}
-			<main className='max-w-2xl mx-auto px-6 py-16'>
-				<p className='text-lg font-light text-[#4a4a48] mb-10'>
-					Have questions or ready to book? I&apos;d love to hear from you.
 					<div className='mt-4'>
-						<p className='font-light text-[#4a4a48] mb-4'>
+						<p className='text-white mb-4 tracking-wide'>
 							Or reach out directly:
 						</p>
-						<p className='text-lg font-light'>
-							<a
-								href='tel:(555)123-4567'
-								className='text-[#a8b5a3] hover:opacity-80 transition'
-							>
-								(555) 123-4567
-							</a>
+						<p className='text-lg font-light text-white tracking-wide'>
+							(555) 123-4567
 						</p>
-						<p className='text-lg font-light'>
+						<p className='text-lg font-light text-white tracking-wide'>
 							<a
 								href='mailto:hello@reneeskincare.com'
-								className='text-[#a8b5a3] hover:opacity-80 transition'
+								className='hover:opacity-80 transition'
 							>
 								hello@reneeskincare.com
 							</a>
 						</p>
 					</div>
-				</p>
+				</div>
+			</section>
 
+			{/* Main */}
+			<main className='max-w-2xl mx-auto px-6 py-16'>
 				{success && (
 					<div className='bg-[#a8b5a3] text-white p-4 rounded mb-6'>
 						<p className='font-light'>
