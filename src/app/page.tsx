@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
 	return (
 		<div className='min-h-screen bg-neutral-900 text-white'>
@@ -6,24 +8,24 @@ export default function Home() {
 				<nav className='max-w-7xl mx-auto px-6 py-6 flex items-center justify-between'>
 					<div className='font-serif text-2xl font-light'>Renée Skin Care</div>
 					<div className='flex gap-8'>
-						<a
-							href='#'
+						<Link
+							href='/'
 							className='text-sm font-light hover:opacity-80 transition'
 						>
 							Home
-						</a>
-						<a
-							href='#'
+						</Link>
+						<Link
+							href='/services'
 							className='text-sm font-light hover:opacity-80 transition'
 						>
 							Services
-						</a>
-						<a
-							href='#'
+						</Link>
+						<Link
+							href='/contact'
 							className='text-sm font-light hover:opacity-80 transition'
 						>
 							Contact
-						</a>
+						</Link>
 					</div>
 				</nav>
 			</header>
