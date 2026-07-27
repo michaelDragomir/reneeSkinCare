@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Lora, Bodoni_Moda } from 'next/font/google';
+import { Inter, Lora, Bodoni_Moda, Raleway } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
@@ -25,6 +25,25 @@ const bodoniModaRegular = Bodoni_Moda({
 	weight: '400',
 });
 
+const raleway = Raleway({
+	variable: '--font-raleway',
+	subsets: ['latin'],
+	weight: '400',
+});
+
+const raleway500 = Raleway({
+	variable: '--font-raleway-500',
+	subsets: ['latin'],
+	weight: '500',
+});
+
+const ralewayLight = Raleway({
+	variable: '--font-raleway-light',
+	subsets: ['latin'],
+	weight: '400',
+	style: 'italic',
+});
+
 export const metadata: Metadata = {
 	title: 'Love Your Skin by Renee',
 	description: 'Advanced skincare services with a personalized approach',
@@ -38,7 +57,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			className={`${inter.variable} ${lora.variable} ${bodoniModa.variable} ${bodoniModaRegular.variable} h-full antialiased`}
+			className={`${inter.variable} ${lora.variable} ${bodoniModa.variable} ${bodoniModaRegular.variable} ${raleway.variable} ${raleway500.variable} ${ralewayLight.variable} h-full antialiased`}
 		>
 			<body className='min-h-full flex flex-col bg-[#f5f3f0]'>{children}</body>
 		</html>

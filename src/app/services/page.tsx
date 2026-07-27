@@ -115,7 +115,10 @@ export default function Services() {
 					>
 						Services & Pricing
 					</h1>
-					<p className='text-md md:text-lg font-light text-white opacity-90 whitespace-nowrap'>
+					<p
+						className='text-md md:text-lg font-light text-white opacity-90 whitespace-nowrap'
+						style={{ fontFamily: 'var(--font-raleway-500)' }}
+					>
 						Every treatment is customized to your skin.
 					</p>
 				</div>
@@ -123,7 +126,13 @@ export default function Services() {
 
 			{/* Services Section */}
 			<main className='max-w-4xl mx-auto px-6 py-16'>
-				<h1 className='font-serif text-4xl font-light mb-12 text-center md:text-left'>
+				<h1
+					className='font-serif text-4xl font-light mb-12 text-center md:text-left'
+					style={{
+						fontFamily: 'var(--font-bodoni-moda)',
+						fontStyle: 'italic',
+					}}
+				>
 					Facials & Clinical Treatments
 				</h1>
 
@@ -135,27 +144,42 @@ export default function Services() {
 						>
 							<div className='mb-4'>
 								<div className='flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 md:gap-4 mb-2'>
-									<h2 className='font-serif text-xl md:text-2xl font-light'>
+									<h2
+										className='font-serif text-xl md:text-2xl font-light'
+										style={{ fontFamily: 'var(--font-raleway-500)' }}
+									>
 										&ldquo;{service.name}&rdquo;
 									</h2>
 									<p className='font-serif text-2xl md:text-3xl font-light text-[#a8b5a3] flex-shrink-0'>
 										{service.price}
 									</p>
 								</div>
-								<p className='text-sm md:text-base font-light text-[#4a4a48] italic'>
+								<p
+									className='text-sm md:text-base text-[#4a4a48]'
+									style={{
+										fontFamily: 'var(--font-raleway-light)',
+										fontStyle: 'italic',
+									}}
+								>
 									{service.subtitle}
 								</p>
 							</div>
 							<div className='border-b border-[#c4b5a0] border-opacity-30 my-4' />
 							<div className='flex items-center gap-2 mb-4'>
-								<span className='text-xs font-light text-[#a8b5a3] tracking-widest uppercase'>
+								<span
+									className='text-xs font-light text-[#a8b5a3] tracking-widest uppercase'
+									style={{ fontFamily: 'var(--font-raleway-500)' }}
+								>
 									Duration:
 								</span>
 								<span className='text-sm font-light text-[#4a4a48]'>
 									{service.duration}
 								</span>
 							</div>
-							<p className='text-sm md:text-base font-light leading-relaxed text-[#4a4a48] tracking-wide'>
+							<p
+								className='text-sm md:text-base font-light leading-relaxed text-[#4a4a48] tracking-wide'
+								style={{ fontFamily: 'var(--font-raleway-500)' }}
+							>
 								{service.description}
 							</p>
 						</div>
@@ -178,7 +202,10 @@ export default function Services() {
 			{/* Footer */}
 			<footer className='border-t border-[#b5a690] bg-[#f5f3f0] py-12 px-6 text-center text-neutral-800 mt-16'>
 				<div className='max-w-7xl mx-auto text-neutral-800 tracking-wider'>
-					<div className='mb-8'>
+					<div
+						className='mb-8'
+						style={{ fontFamily: 'var(--font-raleway-500)' }}
+					>
 						<p className='text-md text-neutral-800'>
 							Email:{' '}
 							<a
@@ -190,8 +217,11 @@ export default function Services() {
 						</p>
 						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>
-					<div className='border-t border-[#b5a690] pt-6 text-xs text-neutral-800'>
-						<p>&copy; 2026 . All rights reserved.</p>
+					<div
+						className='border-t border-[#b5a690] pt-6 text-xs text-neutral-800'
+						style={{ fontFamily: 'var(--font-raleway-500)' }}
+					>
+						<p>&copy; 2026 Love Your Skin by Renee. All rights reserved.</p>
 					</div>
 				</div>
 			</footer>

@@ -212,7 +212,10 @@ export default function Contact() {
 			{/* Footer */}
 			<footer className='border-t border-[#b5a690] bg-[#f5f3f0] py-12 px-6 text-center text-neutral-800 mt-16'>
 				<div className='max-w-7xl mx-auto text-neutral-800 tracking-wider'>
-					<div className='mb-8'>
+					<div
+						className='mb-8'
+						style={{ fontFamily: 'var(--font-raleway-500)' }}
+					>
 						<p className='text-md text-neutral-800'>
 							Email:{' '}
 							<a
@@ -224,7 +227,10 @@ export default function Contact() {
 						</p>
 						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>
-					<div className='border-t border-[#b5a690] pt-6 text-xs text-neutral-800'>
+					<div
+						className='border-t border-[#b5a690] pt-6 text-xs text-neutral-800'
+						style={{ fontFamily: 'var(--font-raleway-500)' }}
+					>
 						<p>&copy; 2026 Love Your Skin by Renee. All rights reserved.</p>
 					</div>
 				</div>
