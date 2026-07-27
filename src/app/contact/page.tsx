@@ -103,25 +103,25 @@ export default function Contact() {
 			</header>
 
 			{/* Header Section */}
-			<section className='bg-[#c9a8a8] py-16 px-6'>
+			<section className='bg-[#eddbd2] py-16 px-6'>
 				<div className='max-w-4xl mx-auto text-center md:text-left'>
 					<h1
-						className='text-5xl text-white mb-4'
+						className='text-5xl text-[#4a4a48] mb-4'
 						style={{ fontFamily: 'var(--font-bodoni-moda-regular)' }}
 					>
 						Get in Touch
 					</h1>
-					<p className='text-lg font-light text-white opacity-90 tracking-wide'>
+					<p className='text-lg font-light text-[#4a4a48] opacity-90 tracking-wide'>
 						Have questions or ready to book? I&apos;d love to hear from you.
 					</p>
 					<div className='mt-4'>
-						<p className='text-white mb-4 tracking-wide'>
+						<p className='text-[#4a4a48] mb-4 tracking-wide'>
 							Or reach out directly:
 						</p>
-						<p className='text-lg font-light text-white tracking-wide'>
+						<p className='text-lg font-light text-[#4a4a48] tracking-wide'>
 							(555) 123-4567
 						</p>
-						<p className='text-lg font-light text-white tracking-wide'>
+						<p className='text-lg font-light text-[#4a4a48] tracking-wide'>
 							<a
 								href='mailto:hello@lysbyrenee.com'
 								className='hover:opacity-80 transition'
@@ -187,7 +187,7 @@ export default function Contact() {
 						<button
 							type='submit'
 							disabled={loading}
-							className='bg-[#a8b5a3] hover:bg-[#98a593] disabled:opacity-50 transition text-white font-light px-8 py-3 uppercase tracking-wider rounded-sm'
+							className='bg-[#8b8880] hover:bg-[#2e2e2e] disabled:opacity-50 transition text-white font-light px-8 py-3 uppercase tracking-wider rounded-sm cursor-pointer'
 						>
 							{loading ? 'Sending...' : 'Send Message'}
 						</button>

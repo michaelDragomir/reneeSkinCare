@@ -127,14 +127,14 @@ export default function Home() {
 			</main>
 
 			{/* Testimonial Section */}
-			<section className='bg-[#c9a8a8] py-10 px-6'>
+			<section className='bg-[#eddbd2] py-10 px-6'>
 				<div className='max-w-4xl mx-auto text-center'>
-					<p className='font-serif text-3xl italic font-light leading-relaxed text-white mb-6 tracking-wide'>
+					<p className='font-serif text-3xl italic font-light leading-relaxed text-[#4a4a48] mb-6 tracking-wide'>
 						&ldquo;My clients are extremely loyal due to exemplary results,
 						customer service and personal attention unique to each
 						client.&rdquo;
 					</p>
-					<p className='text-sm font-light text-white uppercase tracking-wide'>
+					<p className='text-sm font-light text-[#4a4a48] uppercase tracking-wide'>
 						— Renée, Licensed Aesthetician
 					</p>
 				</div>

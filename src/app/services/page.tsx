@@ -103,20 +103,20 @@ export default function Services() {
 			</header>
 
 			{/* Header Section */}
-			<section className='bg-[#c9a8a8] py-16 px-6'>
+			<section className='bg-[#eddbd2] py-16 px-6'>
 				<div className='max-w-4xl mx-auto text-center md:text-left'>
 					{/* <p className='text-[#a89682] text-xs font-light tracking-widest uppercase mb-4'>
 						What I Offer
 					</p>
 					<div className='border-b border-[#a89682] w-12 mb-6' /> */}
 					<h1
-						className='text-5xl text-white mb-4'
+						className='text-5xl text-[#4a4a48] mb-4'
 						style={{ fontFamily: 'var(--font-bodoni-moda-regular)' }}
 					>
 						Services & Pricing
 					</h1>
 					<p
-						className='text-md md:text-lg font-light text-white opacity-90 whitespace-nowrap'
+						className='text-md md:text-lg font-light text-[#4a4a48] opacity-90 whitespace-nowrap'
 						style={{ fontFamily: 'var(--font-raleway-500)' }}
 					>
 						Every treatment is customized to your skin.
@@ -148,9 +148,9 @@ export default function Services() {
 										className='font-serif text-xl md:text-2xl font-light'
 										style={{ fontFamily: 'var(--font-raleway-500)' }}
 									>
-										&ldquo;{service.name}&rdquo;
+										{service.name}
 									</h2>
-									<p className='font-serif text-2xl md:text-3xl font-light text-[#a8b5a3] flex-shrink-0'>
+									<p className='font-serif text-2xl md:text-3xl font-light text-[#c9a8a8] flex-shrink-0'>
 										{service.price}
 									</p>
 								</div>
@@ -164,18 +164,21 @@ export default function Services() {
 									{service.subtitle}
 								</p>
 							</div>
-							<div className='border-b border-[#c4b5a0] border-opacity-30 my-4' />
 							<div className='flex items-center gap-2 mb-4'>
 								<span
-									className='text-xs font-light text-[#a8b5a3] tracking-widest uppercase'
+									className='text-xs font-light text-[#8b888] tracking-wid uppercase'
 									style={{ fontFamily: 'var(--font-raleway-500)' }}
 								>
 									Duration:
 								</span>
-								<span className='text-sm font-light text-[#4a4a48]'>
+								<span
+									className='text-sm font-light text-[#8b888]'
+									style={{ fontFamily: 'var(--font-raleway-500)' }}
+								>
 									{service.duration}
 								</span>
 							</div>
+							<div className='border-b border-[#c9a8a8] border-opacity-30 my-4' />
 							<p
 								className='text-sm md:text-base font-light leading-relaxed text-[#4a4a48] tracking-wide'
 								style={{ fontFamily: 'var(--font-raleway-500)' }}
