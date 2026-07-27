@@ -7,7 +7,9 @@ export default function Home() {
 			{/* Header */}
 			<header className='border-b border-[#c4b5a0]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
-					<div className='font-serif text-2xl font-light'>Renée Skin Care</div>
+					<div className='font-serif text-2xl font-light'>
+						Love Your Skin by Renee
+					</div>
 					<div className='flex gap-8 tracking-wider'>
 						<Link
 							href='/'
@@ -38,7 +40,7 @@ export default function Home() {
 					<div className='flex justify-center'>
 						<Image
 							src='/skincare.jpg'
-							alt='Renée Skin Care professional portrait'
+							alt='love your skin by renee professional portrait'
 							width={400}
 							height={400}
 							className='w-4/5 h-auto rounded'
@@ -49,7 +51,7 @@ export default function Home() {
 					{/* Content */}
 					<div className='space-y-6 p-4'>
 						<h1 className='font-serif text-5xl font-light leading-tight'>
-							Renée Skin Care
+							Love Your Skin <br /> by Renee
 						</h1>
 
 						<p className='text-lg font-light text-neutral-800 tracking-wide'>
@@ -106,7 +108,7 @@ export default function Home() {
 						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>
 					<div className='border-t border-[#b5a690] pt-6 text-xs text-neutral-800'>
-						<p>&copy; 2026 Renée Skin Care. All rights reserved.</p>
+						<p>&copy; 2026 Love Your Skin by Renee. All rights reserved.</p>
 					</div>
 				</div>
 			</footer>

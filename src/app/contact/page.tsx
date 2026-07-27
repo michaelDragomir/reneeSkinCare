@@ -61,7 +61,7 @@ export default function Contact() {
 						href='/'
 						className='font-serif text-2xl font-light hover:opacity-80 transition'
 					>
-						Renée Skin Care
+						Love Your Skin by Renee
 					</Link>
 					<div className='flex gap-8 tracking-wider'>
 						<Link
@@ -198,7 +198,7 @@ export default function Contact() {
 						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>
 					<div className='border-t border-[#b5a690] pt-6 text-xs text-neutral-800'>
-						<p>&copy; 2026 Renée Skin Care. All rights reserved.</p>
+						<p>&copy; 2026 Love Your Skin by Renee. All rights reserved.</p>
 					</div>
 				</div>
 			</footer>
