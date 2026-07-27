@@ -1,18 +1,50 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import Link from 'next/link';
+
+const navLinks = [
+	{ href: '/', label: 'Home' },
+	{ href: '/services', label: 'Services' },
+	{ href: '/contact', label: 'Contact' },
+];
 
 export function MobileNav() {
 	const [isOpen, setIsOpen] = useState(false);
+	const [mounted, setMounted] = useState(false);
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	useEffect(() => {
+		if (!isOpen) return;
+
+		const handleEscape = (event: KeyboardEvent) => {
+			if (event.key === 'Escape') setIsOpen(false);
+		};
+
+		document.body.style.overflow = 'hidden';
+		document.addEventListener('keydown', handleEscape);
+
+		return () => {
+			document.body.style.overflow = '';
+			document.removeEventListener('keydown', handleEscape);
+		};
+	}, [isOpen]);
+
+	const close = () => setIsOpen(false);
 
 	return (
 		<>
-			{/* Hamburger Button */}
 			<button
-				onClick={() => setIsOpen(!isOpen)}
-				className='md:hidden flex flex-col gap-1.5 p-2'
-				aria-label='Toggle menu'
+				onClick={() => setIsOpen((open) => !open)}
+				className={`md:hidden relative flex flex-col gap-1.5 p-2 ${
+					isOpen ? 'z-[60]' : ''
+				}`}
+				aria-label={isOpen ? 'Close menu' : 'Open menu'}
+				aria-expanded={isOpen}
 			>
 				<span
 					className={`block w-6 h-0.5 bg-[#4a4a48] transition-all ${
@@ -31,43 +63,33 @@ export function MobileNav() {
 				/>
 			</button>
 
-			{/* Mobile Menu Modal */}
-			{isOpen && (
-				<>
-					{/* Overlay */}
-					<div
-						className='fixed inset-0 bg-black bg-opacity-50 md:hidden z-40'
-						onClick={() => setIsOpen(false)}
-					/>
+			{mounted &&
+				isOpen &&
+				createPortal(
+					<div className='fixed inset-0 z-50 md:hidden'>
+						<div
+							className='absolute inset-0 bg-black/50'
+							onClick={close}
+							aria-hidden='true'
+						/>
 
-					{/* Menu Panel */}
-					<div className='fixed top-0 left-0 right-0 bg-[#f5f3f0] border-b border-[#c4b5a0] md:hidden z-50'>
-						<nav className='max-w-7xl mx-auto px-6 py-6 flex flex-col gap-6'>
-							<Link
-								href='/'
-								className='text-lg font-light hover:opacity-60 transition'
-								onClick={() => setIsOpen(false)}
-							>
-								Home
-							</Link>
-							<Link
-								href='/services'
-								className='text-lg font-light hover:opacity-60 transition'
-								onClick={() => setIsOpen(false)}
-							>
-								Services
-							</Link>
-							<Link
-								href='/contact'
-								className='text-lg font-light hover:opacity-60 transition'
-								onClick={() => setIsOpen(false)}
-							>
-								Contact
-							</Link>
-						</nav>
-					</div>
-				</>
-			)}
+						<div className='relative z-10 w-full border-b border-[#c4b5a0] bg-[#f5f3f0] shadow-lg'>
+							<nav className='mx-auto flex max-w-7xl flex-col gap-6 px-6 py-8'>
+								{navLinks.map((link) => (
+									<Link
+										key={link.href}
+										href={link.href}
+										className='text-lg font-light tracking-wider text-[#4a4a48] transition hover:opacity-60'
+										onClick={close}
+									>
+										{link.label}
+									</Link>
+								))}
+							</nav>
+						</div>
+					</div>,
+					document.body
+				)}
 		</>
 	);
 }

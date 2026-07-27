@@ -100,7 +100,7 @@ export default function Services() {
 
 			{/* Header Section */}
 			<section className='bg-[#9ba89f] py-16 px-6'>
-				<div className='max-w-4xl mx-auto'>
+				<div className='max-w-4xl mx-auto text-center md:text-left'>
 					{/* <p className='text-[#a89682] text-xs font-light tracking-widest uppercase mb-4'>
 						What I Offer
 					</p>
@@ -108,7 +108,7 @@ export default function Services() {
 					<h1 className='font-serif text-5xl font-light text-white mb-4'>
 						Services & Pricing
 					</h1>
-					<p className='text-lg font-light text-white opacity-90'>
+					<p className='text-sm md:text-lg font-light text-white opacity-90 whitespace-nowrap'>
 						Every treatment is customized to your skin.
 					</p>
 				</div>
