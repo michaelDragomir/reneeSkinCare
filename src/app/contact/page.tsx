@@ -190,13 +190,15 @@ export default function Contact() {
 						/>
 					</div>
 
-					<button
-						type='submit'
-						disabled={loading}
-						className='bg-[#a8b5a3] hover:bg-[#98a593] disabled:opacity-50 transition text-white font-light px-8 py-3 uppercase tracking-wider rounded-sm'
-					>
-						{loading ? 'Sending...' : 'Send Message'}
-					</button>
+					<div className='flex justify-center md:justify-start'>
+						<button
+							type='submit'
+							disabled={loading}
+							className='bg-[#a8b5a3] hover:bg-[#98a593] disabled:opacity-50 transition text-white font-light px-8 py-3 uppercase tracking-wider rounded-sm'
+						>
+							{loading ? 'Sending...' : 'Send Message'}
+						</button>
+					</div>
 				</form>
 			</main>
 
