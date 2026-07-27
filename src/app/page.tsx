@@ -74,7 +74,7 @@ export default function Home() {
 					</div>
 
 					{/* Content */}
-					<div className='space-y-6 p-4'>
+					<div className='space-y-6 p-4 text-center'>
 						<h1 className='font-serif text-5xl font-light leading-tight'>
 							Love Your Skin <br /> by Renee
 						</h1>
