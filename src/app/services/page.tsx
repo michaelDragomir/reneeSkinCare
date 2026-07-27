@@ -122,26 +122,32 @@ export default function Services() {
 
 				<div className='space-y-8'>
 					{services.map((service, index) => (
-						<div key={index}>
-							<div className='flex items-start justify-between mb-3'>
-								<div>
-									<h2 className='font-serif text-2xl font-light'>
-										&ldquo;{service.name}&ldquo; — {service.subtitle}
+						<div key={index} className='bg-white bg-opacity-40 rounded-lg p-6 md:p-8'>
+							<div className='mb-4'>
+								<div className='flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 md:gap-4 mb-2'>
+									<h2 className='font-serif text-xl md:text-2xl font-light'>
+										&ldquo;{service.name}&rdquo;
 									</h2>
-									<p className='text-xs font-light text-[#aea292] tracking-widest mt-2 uppercase'>
-										{service.duration}
+									<p className='font-serif text-2xl md:text-3xl font-light text-[#a8b5a3] flex-shrink-0'>
+										{service.price}
 									</p>
 								</div>
-								<p className='font-serif text-3xl font-light text-[#aea292]'>
-									{service.price}
+								<p className='text-sm md:text-base font-light text-[#4a4a48] italic'>
+									{service.subtitle}
 								</p>
 							</div>
-							<p className='text-base font-light leading-relaxed text-[#4a4a48] mb-6'>
+							<div className='border-b border-[#c4b5a0] border-opacity-30 my-4' />
+							<div className='flex items-center gap-2 mb-4'>
+								<span className='text-xs font-light text-[#a8b5a3] tracking-widest uppercase'>
+									Duration:
+								</span>
+								<span className='text-sm font-light text-[#4a4a48]'>
+									{service.duration}
+								</span>
+							</div>
+							<p className='text-sm md:text-base font-light leading-relaxed text-[#4a4a48]'>
 								{service.description}
 							</p>
-							{index < services.length - 1 && (
-								<div className='border-b border-[#c4b5a0]' />
-							)}
 						</div>
 					))}
 				</div>
