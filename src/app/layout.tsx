@@ -47,6 +47,12 @@ const ralewayLight = Raleway({
 export const metadata: Metadata = {
 	title: 'Love Your Skin by Renee',
 	description: 'Advanced skincare services with a personalized approach',
+	icons: {
+		icon: {
+			url: '/favicon.png',
+			type: 'image/png',
+		},
+	},
 };
 
 export default function RootLayout({

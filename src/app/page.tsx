@@ -6,7 +6,7 @@ import { MobileNav } from '@/components/MobileNav';
 import { breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-	title: 'Renée Skin Care | Advanced Skincare & Facial Treatments',
+	title: 'Love Your Skin by Renee | Advanced Skincare & Facial Treatments',
 	description:
 		'Discover personalized skincare treatments with Renée, a licensed aesthetician with 25+ years of experience. Specializing in facials, medical-grade treatments, and holistic skincare.',
 	openGraph: {
