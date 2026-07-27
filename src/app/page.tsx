@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
+import { SchemaScript } from '@/components/SchemaScript';
+import { breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
 	title: 'Renée Skin Care | Advanced Skincare & Facial Treatments',
@@ -16,8 +18,13 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+	const breadcrumbs = breadcrumbSchema([
+		{ name: 'Home', url: 'https://reneeskincare.com' },
+	]);
+
 	return (
 		<div className='min-h-screen bg-[#f5f3f0] text-[#4a4a48]'>
+			<SchemaScript schema={breadcrumbs} />
 			{/* Header */}
 			<header className='border-b border-[#c4b5a0]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
@@ -54,7 +61,7 @@ export default function Home() {
 					<div className='flex justify-center'>
 						<Image
 							src='/skincare.jpg'
-							alt='love your skin by renee professional portrait'
+							alt='Renée, Licensed Aesthetician specializing in advanced skincare and facial treatments'
 							width={400}
 							height={400}
 							className='w-4/5 h-auto rounded'

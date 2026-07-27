@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Lora } from "next/font/google";
 import "./globals.css";
+import { SchemaScript } from "@/components/SchemaScript";
+import { localBusinessSchema, organizationSchema } from "@/lib/schema";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -63,6 +65,10 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${lora.variable} h-full antialiased`}
     >
+      <head>
+        <SchemaScript schema={localBusinessSchema} />
+        <SchemaScript schema={organizationSchema} />
+      </head>
       <body className="min-h-full flex flex-col bg-[#f5f3f0]">{children}</body>
     </html>
   );

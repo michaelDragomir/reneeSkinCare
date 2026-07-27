@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { SchemaScript } from '@/components/SchemaScript';
+import { breadcrumbSchema } from '@/lib/schema';
 
 export default function Contact() {
 	const [formData, setFormData] = useState({
@@ -52,8 +54,14 @@ export default function Contact() {
 		}
 	};
 
+	const breadcrumbs = breadcrumbSchema([
+		{ name: 'Home', url: 'https://reneeskincare.com' },
+		{ name: 'Contact', url: 'https://reneeskincare.com/contact' },
+	]);
+
 	return (
 		<div className='min-h-screen bg-[#f5f3f0] text-[#4a4a48]'>
+			<SchemaScript schema={breadcrumbs} />
 			{/* Header */}
 			<header className='border-b border-[#c4b5a0]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>

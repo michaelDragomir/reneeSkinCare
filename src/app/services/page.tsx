@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import { SchemaScript } from '@/components/SchemaScript';
+import { servicesSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
 	title: 'Services & Pricing | Renée Skin Care',
@@ -49,8 +51,17 @@ export default function Services() {
 		},
 	];
 
+	const breadcrumbs = breadcrumbSchema([
+		{ name: 'Home', url: 'https://reneeskincare.com' },
+		{ name: 'Services', url: 'https://reneeskincare.com/services' },
+	]);
+
 	return (
 		<div className='min-h-screen bg-[#f5f3f0] text-[#4a4a48]'>
+			{servicesSchema.map((schema, idx) => (
+				<SchemaScript key={idx} schema={schema} />
+			))}
+			<SchemaScript schema={breadcrumbs} />
 			{/* Header */}
 			<header className='border-b border-[#c4b5a0]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
