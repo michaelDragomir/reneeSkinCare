@@ -128,20 +128,6 @@ export default function Contact() {
 
 			{/* Main */}
 			<main className='max-w-2xl mx-auto px-6 py-16'>
-				{success && (
-					<div className='bg-[#a8b5a3] text-white p-4 rounded mb-6'>
-						<p className='font-light'>
-							Thank you! Your message has been sent successfully.
-						</p>
-					</div>
-				)}
-
-				{error && (
-					<div className='bg-red-100 text-red-700 p-4 rounded mb-6'>
-						<p className='font-light'>{error}</p>
-					</div>
-				)}
-
 				<form onSubmit={handleSubmit} className='space-y-6'>
 					<div>
 						<label className='block text-sm font-light mb-2'>Name</label>
@@ -199,6 +185,20 @@ export default function Contact() {
 							{loading ? 'Sending...' : 'Send Message'}
 						</button>
 					</div>
+
+					{success && (
+						<div className='bg-[#a8b5a3] text-white p-4 rounded mt-6'>
+							<p className='font-light'>
+								Thank you! Your message has been sent successfully.
+							</p>
+						</div>
+					)}
+
+					{error && (
+						<div className='bg-red-100 text-red-700 p-4 rounded mt-6'>
+							<p className='font-light'>{error}</p>
+						</div>
+					)}
 				</form>
 			</main>
 
