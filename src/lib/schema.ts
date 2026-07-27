@@ -16,8 +16,8 @@ export const localBusinessSchema = {
 	},
 	sameAs: [
 		// Add your social media URLs here when available
-		// 'https://www.instagram.com/reneeskincare',
-		// 'https://www.facebook.com/reneeskincare',
+		// 'https://www.instagram.com/lysbyrenee',
+		// 'https://www.facebook.com/lysbyrenee',
 	],
 };
 

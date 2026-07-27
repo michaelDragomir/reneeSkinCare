@@ -13,14 +13,14 @@ export const metadata: Metadata = {
 		title: 'Renée Skin Care',
 		description:
 			'Advanced skincare treatments with personalized care and proven techniques.',
-		url: 'https://reneeskincare.com',
+		url: 'https://lysbyrenee.com',
 		type: 'website',
 	},
 };
 
 export default function Home() {
 	const breadcrumbs = breadcrumbSchema([
-		{ name: 'Home', url: 'https://reneeskincare.com' },
+		{ name: 'Home', url: 'https://lysbyrenee.com' },
 	]);
 
 	return (
@@ -133,7 +133,13 @@ export default function Home() {
 				<div className='max-w-7xl mx-auto text-neutral-800 tracking-wider'>
 					<div className='mb-8'>
 						<p className='text-md text-neutral-800'>
-							Email: <a href='mailto:hello@lysbyrenee.com' className='hover:opacity-80 transition'>hello@lysbyrenee.com</a>
+							Email:{' '}
+							<a
+								href='mailto:hello@lysbyrenee.com'
+								className='hover:opacity-80 transition'
+							>
+								hello@lysbyrenee.com
+							</a>
 						</p>
 						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>

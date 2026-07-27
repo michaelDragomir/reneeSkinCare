@@ -56,8 +56,8 @@ export default function Contact() {
 	};
 
 	const breadcrumbs = breadcrumbSchema([
-		{ name: 'Home', url: 'https://reneeskincare.com' },
-		{ name: 'Contact', url: 'https://reneeskincare.com/contact' },
+		{ name: 'Home', url: 'https://lysbyrenee.com' },
+		{ name: 'Contact', url: 'https://lysbyrenee.com/contact' },
 	]);
 
 	return (
@@ -207,7 +207,13 @@ export default function Contact() {
 				<div className='max-w-7xl mx-auto text-neutral-800 tracking-wider'>
 					<div className='mb-8'>
 						<p className='text-md text-neutral-800'>
-							Email: <a href='mailto:hello@lysbyrenee.com' className='hover:opacity-80 transition'>hello@lysbyrenee.com</a>
+							Email:{' '}
+							<a
+								href='mailto:hello@lysbyrenee.com'
+								className='hover:opacity-80 transition'
+							>
+								hello@lysbyrenee.com
+							</a>
 						</p>
 						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>

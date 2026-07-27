@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: 'Services & Pricing',
 		description: 'Professional skincare treatments tailored to your skin.',
-		url: 'https://reneeskincare.com/services',
+		url: 'https://lysbyrenee.com/services',
 		type: 'website',
 	},
 };
@@ -53,8 +53,8 @@ export default function Services() {
 	];
 
 	const breadcrumbs = breadcrumbSchema([
-		{ name: 'Home', url: 'https://reneeskincare.com' },
-		{ name: 'Services', url: 'https://reneeskincare.com/services' },
+		{ name: 'Home', url: 'https://lysbyrenee.com' },
+		{ name: 'Services', url: 'https://lysbyrenee.com/services' },
 	]);
 
 	return (
@@ -173,7 +173,13 @@ export default function Services() {
 				<div className='max-w-7xl mx-auto text-neutral-800 tracking-wider'>
 					<div className='mb-8'>
 						<p className='text-md text-neutral-800'>
-							Email: <a href='mailto:hello@lysbyrenee.com' className='hover:opacity-80 transition'>hello@lysbyrenee.com</a>
+							Email:{' '}
+							<a
+								href='mailto:hello@lysbyrenee.com'
+								className='hover:opacity-80 transition'
+							>
+								hello@lysbyrenee.com
+							</a>
 						</p>
 						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>
