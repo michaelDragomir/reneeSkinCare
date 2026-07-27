@@ -29,7 +29,10 @@ export default function Home() {
 			{/* Header */}
 			<header className='border-b border-[#c4b5a0]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
-					<Link href='/' className='font-serif text-2xl font-light hover:opacity-80 transition'>
+					<Link
+						href='/'
+						className='font-serif text-2xl font-light hover:opacity-80 transition'
+					>
 						Love Your Skin by Renee
 					</Link>
 					{/* Desktop Nav */}
@@ -114,7 +117,7 @@ export default function Home() {
 			{/* Testimonial Section */}
 			<section className='bg-[#a8b5a3] py-10 px-6'>
 				<div className='max-w-4xl mx-auto text-center'>
-					<p className='font-serif text-3xl italic font-light leading-relaxed text-white mb-6'>
+					<p className='font-serif text-3xl italic font-light leading-relaxed text-white mb-6 tracking-wide'>
 						&ldquo;My clients are extremely loyal due to exemplary results,
 						customer service and personal attention unique to each
 						client.&rdquo;

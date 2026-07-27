@@ -122,7 +122,10 @@ export default function Services() {
 
 				<div className='space-y-8'>
 					{services.map((service, index) => (
-						<div key={index} className='bg-white bg-opacity-40 rounded-lg p-6 md:p-8'>
+						<div
+							key={index}
+							className='bg-white bg-opacity-40 rounded-lg p-6 md:p-8'
+						>
 							<div className='mb-4'>
 								<div className='flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 md:gap-4 mb-2'>
 									<h2 className='font-serif text-xl md:text-2xl font-light'>
@@ -145,7 +148,7 @@ export default function Services() {
 									{service.duration}
 								</span>
 							</div>
-							<p className='text-sm md:text-base font-light leading-relaxed text-[#4a4a48]'>
+							<p className='text-sm md:text-base font-light leading-relaxed text-[#4a4a48] tracking-wide'>
 								{service.description}
 							</p>
 						</div>
