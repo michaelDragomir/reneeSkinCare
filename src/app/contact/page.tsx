@@ -207,7 +207,7 @@ export default function Contact() {
 				<div className='max-w-7xl mx-auto text-neutral-800 tracking-wider'>
 					<div className='mb-8'>
 						<p className='text-md text-neutral-800'>
-							Email: hello@reneeskincare.com
+							Email: hello@lysbyrenee.com
 						</p>
 						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>
