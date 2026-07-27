@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Metadata } from 'next';
 import { SchemaScript } from '@/components/SchemaScript';
 import { MobileNav } from '@/components/MobileNav';
@@ -66,15 +67,14 @@ export default function Services() {
 			{/* Header */}
 			<header className='border-b border-[#c4b5a0]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
-					<Link
-						href='/'
-						className='text-2xl hover:opacity-80 transition'
-						style={{
-							fontFamily: 'var(--font-bodoni-moda)',
-							fontStyle: 'italic',
-						}}
-					>
-						Love Your Skin by Renee
+					<Link href='/' className='hover:opacity-80 transition'>
+						<Image
+							src='/logo.png'
+							alt='Love Your Skin by Renee'
+							width={280}
+							height={160}
+							className='h-20 w-auto'
+						/>
 					</Link>
 					{/* Desktop Nav */}
 					<div className='hidden md:flex gap-8 tracking-wider'>

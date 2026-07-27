@@ -29,15 +29,14 @@ export default function Home() {
 			{/* Header */}
 			<header className='border-b border-[#c9a8a8]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
-					<Link
-						href='/'
-						className='text-2xl hover:opacity-80 transition'
-						style={{
-							fontFamily: 'var(--font-bodoni-moda)',
-							fontStyle: 'italic',
-						}}
-					>
-						Love Your Skin by Renee
+					<Link href='/' className='hover:opacity-80 transition'>
+						<Image
+							src='/logo.png'
+							alt='Love Your Skin by Renee'
+							width={280}
+							height={160}
+							className='h-20 w-auto'
+						/>
 					</Link>
 					{/* Desktop Nav */}
 					<div className='hidden md:flex gap-8 tracking-wider'>
