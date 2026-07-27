@@ -111,17 +111,29 @@ export default function Contact() {
 					>
 						Get in Touch
 					</h1>
-					<p className='text-lg font-light text-[#4a4a48] opacity-90 tracking-wide'>
+					<p
+						className='text-lg font-light text-[#4a4a48] opacity-90 tracking-wide'
+						style={{ fontFamily: 'var(--font-raleway-500)' }}
+					>
 						Have questions or ready to book? I&apos;d love to hear from you.
 					</p>
 					<div className='mt-4'>
-						<p className='text-[#4a4a48] mb-4 tracking-wide'>
+						<p
+							className='text-[#4a4a48] mb-4 tracking-wide'
+							style={{ fontFamily: 'var(--font-raleway-500)' }}
+						>
 							Or reach out directly:
 						</p>
-						<p className='text-lg font-light text-[#4a4a48] tracking-wide'>
+						<p
+							className='text-lg font-light text-[#4a4a48] tracking-wide'
+							style={{ fontFamily: 'var(--font-raleway-500)' }}
+						>
 							(555) 123-4567
 						</p>
-						<p className='text-lg font-light text-[#4a4a48] tracking-wide'>
+						<p
+							className='text-lg font-light text-[#4a4a48] tracking-wide'
+							style={{ fontFamily: 'var(--font-raleway-500)' }}
+						>
 							<a
 								href='mailto:hello@lysbyrenee.com'
 								className='hover:opacity-80 transition'
