@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { SchemaScript } from '@/components/SchemaScript';
+import { MobileNav } from '@/components/MobileNav';
 import { breadcrumbSchema } from '@/lib/schema';
 
 export default function Contact() {
@@ -91,6 +92,8 @@ export default function Contact() {
 							Contact
 						</Link>
 					</div>
+					{/* Mobile Nav */}
+					<MobileNav />
 				</nav>
 			</header>
 

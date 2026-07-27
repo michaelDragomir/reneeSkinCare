@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Metadata } from 'next';
 import { SchemaScript } from '@/components/SchemaScript';
+import { MobileNav } from '@/components/MobileNav';
 import { breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
@@ -28,10 +29,11 @@ export default function Home() {
 			{/* Header */}
 			<header className='border-b border-[#c4b5a0]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
-					<div className='font-serif text-2xl font-light'>
+					<Link href='/' className='font-serif text-2xl font-light hover:opacity-80 transition'>
 						Love Your Skin by Renee
-					</div>
-					<div className='flex gap-8 tracking-wider'>
+					</Link>
+					{/* Desktop Nav */}
+					<div className='hidden md:flex gap-8 tracking-wider'>
 						<Link
 							href='/'
 							className='text-md font-light hover:opacity-60 transition'
@@ -51,12 +53,14 @@ export default function Home() {
 							Contact
 						</Link>
 					</div>
+					{/* Mobile Nav */}
+					<MobileNav />
 				</nav>
 			</header>
 
 			{/* Hero Section */}
-			<main className='max-w-7xl mx-auto px-6 py-16'>
-				<div className='grid grid-cols-2 gap-12 items-center'>
+			<main className='max-w-7xl mx-auto px-6 py-8 md:py-16'>
+				<div className='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center'>
 					{/* Image */}
 					<div className='flex justify-center'>
 						<Image

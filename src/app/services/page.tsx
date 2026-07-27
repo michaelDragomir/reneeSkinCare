@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { SchemaScript } from '@/components/SchemaScript';
+import { MobileNav } from '@/components/MobileNav';
 import { servicesSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
@@ -91,6 +92,8 @@ export default function Services() {
 							Contact
 						</Link>
 					</div>
+					{/* Mobile Nav */}
+					<MobileNav />
 				</nav>
 			</header>
 
