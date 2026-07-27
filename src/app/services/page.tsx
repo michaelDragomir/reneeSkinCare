@@ -108,7 +108,7 @@ export default function Services() {
 					<h1 className='font-serif text-5xl font-light text-white mb-4'>
 						Services & Pricing
 					</h1>
-					<p className='text-sm md:text-lg font-light text-white opacity-90 whitespace-nowrap'>
+					<p className='text-md md:text-lg font-light text-white opacity-90 whitespace-nowrap'>
 						Every treatment is customized to your skin.
 					</p>
 				</div>
@@ -116,7 +116,7 @@ export default function Services() {
 
 			{/* Services Section */}
 			<main className='max-w-4xl mx-auto px-6 py-16'>
-				<h1 className='font-serif text-4xl font-light mb-12'>
+				<h1 className='font-serif text-4xl font-light mb-12 text-center md:text-left'>
 					Facials & Clinical Treatments
 				</h1>
 
