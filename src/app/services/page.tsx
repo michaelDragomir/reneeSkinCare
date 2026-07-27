@@ -72,7 +72,8 @@ export default function Services() {
 					>
 						Love Your Skin by Renee
 					</Link>
-					<div className='flex gap-8 tracking-wider'>
+					{/* Desktop Nav */}
+					<div className='hidden md:flex gap-8 tracking-wider'>
 						<Link
 							href='/'
 							className='text-md font-light hover:opacity-60 transition'
