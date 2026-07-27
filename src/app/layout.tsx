@@ -49,8 +49,8 @@ export const metadata: Metadata = {
 	description: 'Advanced skincare services with a personalized approach',
 	icons: {
 		icon: {
-			url: '/favicon.png',
-			type: 'image/png',
+			url: '/favicon.ico',
+			// type: 'image/png',
 		},
 	},
 };
