@@ -2,18 +2,6 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-	title: 'Contact | Renée Skin Care',
-	description: 'Get in touch with Renée to book your skincare appointment or ask questions about treatments.',
-	openGraph: {
-		title: 'Contact Renée',
-		description: 'Reach out to schedule your skincare consultation.',
-		url: 'https://reneeskincare.com/contact',
-		type: 'website',
-	},
-};
 
 export default function Contact() {
 	const [formData, setFormData] = useState({
