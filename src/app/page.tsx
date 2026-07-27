@@ -31,7 +31,11 @@ export default function Home() {
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
 					<Link
 						href='/'
-						className='font-serif text-2xl font-light hover:opacity-80 transition'
+						className='text-2xl hover:opacity-80 transition'
+						style={{
+							fontFamily: 'var(--font-bodoni-moda)',
+							fontStyle: 'italic',
+						}}
 					>
 						Love Your Skin by Renee
 					</Link>
@@ -78,10 +82,15 @@ export default function Home() {
 
 					{/* Content */}
 					<div className='space-y-6 p-4 text-center'>
-						<h1 className='font-serif text-3xl md:text-4xl font-light leading-tight'>
-							Love Your Skin
-							<br />
-							by Renee
+						<h1
+							className='text-4xl md:text-5xl leading-tight tracking-wide'
+							style={{
+								fontFamily: 'var(--font-bodoni-moda)',
+								fontStyle: 'italic',
+								fontWeight: '400',
+							}}
+						>
+							Love Your Skin by Renee
 						</h1>
 
 						<p className='text-lg font-light text-neutral-800 tracking-wide'>

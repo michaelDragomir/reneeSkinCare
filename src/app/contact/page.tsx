@@ -68,7 +68,11 @@ export default function Contact() {
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
 					<Link
 						href='/'
-						className='font-serif text-2xl font-light hover:opacity-80 transition'
+						className='text-2xl hover:opacity-80 transition'
+						style={{
+							fontFamily: 'var(--font-bodoni-moda)',
+							fontStyle: 'italic',
+						}}
 					>
 						Love Your Skin by Renee
 					</Link>
@@ -101,7 +105,10 @@ export default function Contact() {
 			{/* Header Section */}
 			<section className='bg-[#c9a8a8] py-16 px-6'>
 				<div className='max-w-4xl mx-auto text-center md:text-left'>
-					<h1 className='font-serif text-5xl font-light text-white mb-4'>
+					<h1
+						className='text-5xl text-white mb-4'
+						style={{ fontFamily: 'var(--font-bodoni-moda-regular)' }}
+					>
 						Get in Touch
 					</h1>
 					<p className='text-lg font-light text-white opacity-90 tracking-wide'>

@@ -68,7 +68,11 @@ export default function Services() {
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
 					<Link
 						href='/'
-						className='font-serif text-2xl font-light hover:opacity-80 transition'
+						className='text-2xl hover:opacity-80 transition'
+						style={{
+							fontFamily: 'var(--font-bodoni-moda)',
+							fontStyle: 'italic',
+						}}
 					>
 						Love Your Skin by Renee
 					</Link>
@@ -105,7 +109,10 @@ export default function Services() {
 						What I Offer
 					</p>
 					<div className='border-b border-[#a89682] w-12 mb-6' /> */}
-					<h1 className='font-serif text-5xl font-light text-white mb-4'>
+					<h1
+						className='text-5xl text-white mb-4'
+						style={{ fontFamily: 'var(--font-bodoni-moda-regular)' }}
+					>
 						Services & Pricing
 					</h1>
 					<p className='text-md md:text-lg font-light text-white opacity-90 whitespace-nowrap'>

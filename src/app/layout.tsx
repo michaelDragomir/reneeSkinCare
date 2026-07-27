@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Lora } from 'next/font/google';
+import { Inter, Lora, Bodoni_Moda } from 'next/font/google';
 import './globals.css';
 
 const inter = Inter({
@@ -10,6 +10,19 @@ const inter = Inter({
 const lora = Lora({
 	variable: '--font-lora',
 	subsets: ['latin'],
+});
+
+const bodoniModa = Bodoni_Moda({
+	variable: '--font-bodoni-moda',
+	subsets: ['latin'],
+	weight: '400',
+	style: 'italic',
+});
+
+const bodoniModaRegular = Bodoni_Moda({
+	variable: '--font-bodoni-moda-regular',
+	subsets: ['latin'],
+	weight: '400',
 });
 
 export const metadata: Metadata = {
@@ -25,7 +38,7 @@ export default function RootLayout({
 	return (
 		<html
 			lang='en'
-			className={`${inter.variable} ${lora.variable} h-full antialiased`}
+			className={`${inter.variable} ${lora.variable} ${bodoniModa.variable} ${bodoniModaRegular.variable} h-full antialiased`}
 		>
 			<body className='min-h-full flex flex-col bg-[#f5f3f0]'>{children}</body>
 		</html>
