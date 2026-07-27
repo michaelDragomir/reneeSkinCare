@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 	description:
 		'Discover personalized skincare treatments with Renée, a licensed aesthetician with 25+ years of experience. Specializing in facials, medical-grade treatments, and holistic skincare.',
 	openGraph: {
-		title: 'Renée Skin Care',
+		title: 'Love your Skin by Renee',
 		description:
 			'Advanced skincare treatments with personalized care and proven techniques.',
 		url: 'https://lysbyrenee.com',
@@ -75,7 +75,7 @@ export default function Home() {
 							alt='Renée, Licensed Aesthetician specializing in advanced skincare and facial treatments'
 							width={500}
 							height={500}
-							className='w-full h-auto rounded border-2 border-[#ddd]'
+							className='w-full h-auto rounded shadow-2xl'
 							priority
 						/>
 					</div>

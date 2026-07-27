@@ -5,7 +5,7 @@ import { MobileNav } from '@/components/MobileNav';
 import { servicesSchema, breadcrumbSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-	title: 'Services & Pricing | Renée Skin Care',
+	title: 'Services & Pricing | Love Your Skin by Renee',
 	description:
 		'Professional skincare treatments including facials, HydraFacial, chemical peels, and intensive treatments. Custom solutions for all skin types.',
 	openGraph: {

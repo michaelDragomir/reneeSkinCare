@@ -2,7 +2,7 @@ export const localBusinessSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'LocalBusiness',
 	'@id': 'https://lysbyrenee.com',
-	name: 'Renée Skin Care',
+	name: 'Love Your Skin by Renee',
 	description:
 		'Licensed aesthetician offering advanced skincare treatments including facials, HydraFacial, and chemical peels.',
 	url: 'https://lysbyrenee.com',
@@ -24,7 +24,7 @@ export const localBusinessSchema = {
 export const organizationSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'Organization',
-	name: 'Renée Skin Care',
+	name: 'Love Your Skin by Renee',
 	url: 'https://lysbyrenee.com',
 	logo: 'https://lysbyrenee.com/logo.png',
 	description: 'Advanced skincare services by a licensed aesthetician',
@@ -52,7 +52,7 @@ export const servicesSchema = [
 		priceCurrency: 'USD',
 		provider: {
 			'@type': 'LocalBusiness',
-			name: 'Renée Skin Care',
+			name: 'Love Your Skin by Renee',
 		},
 	},
 	{
@@ -66,7 +66,7 @@ export const servicesSchema = [
 		priceCurrency: 'USD',
 		provider: {
 			'@type': 'LocalBusiness',
-			name: 'Renée Skin Care',
+			name: 'Love Your Skin by Renee',
 		},
 	},
 	{
@@ -80,7 +80,7 @@ export const servicesSchema = [
 		priceCurrency: 'USD',
 		provider: {
 			'@type': 'LocalBusiness',
-			name: 'Renée Skin Care',
+			name: 'Love Your Skin by Renee',
 		},
 	},
 	{
@@ -94,7 +94,7 @@ export const servicesSchema = [
 		priceCurrency: 'USD',
 		provider: {
 			'@type': 'LocalBusiness',
-			name: 'Renée Skin Care',
+			name: 'Love Your Skin by Renee',
 		},
 	},
 ];
