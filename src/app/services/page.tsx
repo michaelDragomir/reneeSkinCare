@@ -99,7 +99,7 @@ export default function Services() {
 			</header>
 
 			{/* Header Section */}
-			<section className='bg-[#9ba89f] py-16 px-6'>
+			<section className='bg-[#c9a8a8] py-16 px-6'>
 				<div className='max-w-4xl mx-auto text-center md:text-left'>
 					{/* <p className='text-[#a89682] text-xs font-light tracking-widest uppercase mb-4'>
 						What I Offer
@@ -157,7 +157,7 @@ export default function Services() {
 			</main>
 
 			{/* CTA Section */}
-			<section className='bg-[#3d3d3d] py-16 px-6'>
+			{/* <section className='bg-[#3d3d3d] py-16 px-6'>
 				<div className='max-w-3xl mx-auto text-center'>
 					<div className='flex justify-center mb-6'>
 						<div className='w-12 border-b-2 border-[#c4b5a0]' />
@@ -166,7 +166,7 @@ export default function Services() {
 						Ready to Book? Have Questions?
 					</h2>
 				</div>
-			</section>
+			</section> */}
 
 			{/* Footer */}
 			<footer className='border-t border-[#b5a690] bg-[#f5f3f0] py-12 px-6 text-center text-neutral-800 mt-16'>

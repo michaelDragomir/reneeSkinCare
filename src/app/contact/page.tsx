@@ -99,7 +99,7 @@ export default function Contact() {
 			</header>
 
 			{/* Header Section */}
-			<section className='bg-[#9ba89f] py-16 px-6'>
+			<section className='bg-[#c9a8a8] py-16 px-6'>
 				<div className='max-w-4xl mx-auto text-center md:text-left'>
 					<h1 className='font-serif text-5xl font-light text-white mb-4'>
 						Get in Touch

@@ -27,7 +27,7 @@ export default function Home() {
 		<div className='min-h-screen bg-[#f5f3f0] text-[#4a4a48]'>
 			<SchemaScript schema={breadcrumbs} />
 			{/* Header */}
-			<header className='border-b border-[#c4b5a0]'>
+			<header className='border-b border-[#c9a8a8]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
 					<Link
 						href='/'
@@ -67,11 +67,11 @@ export default function Home() {
 					{/* Image */}
 					<div className='flex justify-center'>
 						<Image
-							src='/skincare.jpg'
+							src='/facial.png'
 							alt='Renée, Licensed Aesthetician specializing in advanced skincare and facial treatments'
-							width={400}
-							height={400}
-							className='w-4/5 h-auto rounded'
+							width={500}
+							height={500}
+							className='w-full h-auto rounded border-2 border-[#ddd]'
 							priority
 						/>
 					</div>
@@ -115,7 +115,7 @@ export default function Home() {
 			</main>
 
 			{/* Testimonial Section */}
-			<section className='bg-[#a8b5a3] py-10 px-6'>
+			<section className='bg-[#c9a8a8] py-10 px-6'>
 				<div className='max-w-4xl mx-auto text-center'>
 					<p className='font-serif text-3xl italic font-light leading-relaxed text-white mb-6 tracking-wide'>
 						&ldquo;My clients are extremely loyal due to exemplary results,

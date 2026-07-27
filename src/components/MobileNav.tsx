@@ -12,17 +12,14 @@ const navLinks = [
 
 export function MobileNav() {
 	const [isOpen, setIsOpen] = useState(false);
-	const [mounted, setMounted] = useState(false);
-
-	useEffect(() => {
-		setMounted(true);
-	}, []);
 
 	useEffect(() => {
 		if (!isOpen) return;
 
 		const handleEscape = (event: KeyboardEvent) => {
-			if (event.key === 'Escape') setIsOpen(false);
+			if (event.key === 'Escape') {
+				setIsOpen(false);
+			}
 		};
 
 		document.body.style.overflow = 'hidden';
@@ -41,7 +38,7 @@ export function MobileNav() {
 			<button
 				onClick={() => setIsOpen((open) => !open)}
 				className={`md:hidden relative flex flex-col gap-1.5 p-2 ${
-					isOpen ? 'z-[60]' : ''
+					isOpen ? 'z-[60] hidden' : ''
 				}`}
 				aria-label={isOpen ? 'Close menu' : 'Open menu'}
 				aria-expanded={isOpen}
@@ -63,23 +60,37 @@ export function MobileNav() {
 				/>
 			</button>
 
-			{mounted &&
-				isOpen &&
+			{isOpen &&
 				createPortal(
-					<div className='fixed inset-0 z-50 md:hidden'>
+					<div className='fixed inset-0 z-50 md:hidden flex flex-col'>
 						<div
 							className='absolute inset-0 bg-black/50'
 							onClick={close}
 							aria-hidden='true'
 						/>
 
-						<div className='relative z-10 w-full border-b border-[#c4b5a0] bg-[#f5f3f0] shadow-lg'>
-							<nav className='mx-auto flex max-w-7xl flex-col gap-6 px-6 py-8'>
+						<div className='relative z-10 w-full h-full bg-neutral-200 flex flex-col'>
+							{/* Header */}
+							<div className='flex items-center justify-between px-6 py-6 border-b border-neutral-300'>
+								<h2 className='font-serif text-lg font-light text-[#4a4a48]'>
+									Love Your Skin by Renee
+								</h2>
+								<button
+									onClick={close}
+									className='text-4xl text-[#4a4a48] hover:opacity-60 transition'
+									aria-label='Close menu'
+								>
+									×
+								</button>
+							</div>
+
+							{/* Navigation */}
+							<nav className='flex flex-col items-center justify-center flex-1 gap-12'>
 								{navLinks.map((link) => (
 									<Link
 										key={link.href}
 										href={link.href}
-										className='text-lg font-light tracking-wider text-[#4a4a48] transition hover:opacity-60'
+										className='font-serif text-4xl font-light text-[#4a4a48] transition hover:opacity-60'
 										onClick={close}
 									>
 										{link.label}

@@ -8,7 +8,7 @@ export const localBusinessSchema = {
 	url: 'https://lysbyrenee.com',
 	telephone: '(555) 123-4567',
 	email: 'hello@lysbyrenee.com',
-	image: 'https://lysbyrenee.com/skincare.jpg',
+	image: 'https://lysbyrenee.com/facial.png',
 	priceRange: '$175 - $375',
 	areaServed: {
 		'@type': 'City',
