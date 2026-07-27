@@ -13,8 +13,44 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Renée Skin Care",
-  description: "Advanced skincare services with a personalized approach",
+  title: "Renée Skin Care | Licensed Aesthetician & Skincare Specialist",
+  description:
+    "Advanced skincare treatments including facials, HydraFacial, and chemical peels. Licensed aesthetician with 25+ years of experience in medical and holistic skincare.",
+  keywords: [
+    "skincare",
+    "facial treatments",
+    "aesthetician",
+    "HydraFacial",
+    "chemical peels",
+    "skincare specialist",
+  ],
+  authors: [{ name: "Renée" }],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://reneeskincare.com",
+    siteName: "Renée Skin Care",
+    title: "Renée Skin Care | Licensed Aesthetician",
+    description:
+      "Advanced skincare treatments with personalized care. 25+ years of experience.",
+    images: [
+      {
+        url: "https://reneeskincare.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Renée Skin Care",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Renée Skin Care",
+    description: "Advanced skincare treatments with personalized care",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

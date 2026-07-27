@@ -1,5 +1,19 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'Renée Skin Care | Advanced Skincare & Facial Treatments',
+	description:
+		'Discover personalized skincare treatments with Renée, a licensed aesthetician with 25+ years of experience. Specializing in facials, medical-grade treatments, and holistic skincare.',
+	openGraph: {
+		title: 'Renée Skin Care',
+		description:
+			'Advanced skincare treatments with personalized care and proven techniques.',
+		url: 'https://reneeskincare.com',
+		type: 'website',
+	},
+};
 
 export default function Home() {
 	return (

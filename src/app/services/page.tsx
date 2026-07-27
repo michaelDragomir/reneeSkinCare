@@ -1,4 +1,17 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+	title: 'Services & Pricing | Renée Skin Care',
+	description:
+		'Professional skincare treatments including facials, HydraFacial, chemical peels, and intensive treatments. Custom solutions for all skin types.',
+	openGraph: {
+		title: 'Services & Pricing',
+		description: 'Professional skincare treatments tailored to your skin.',
+		url: 'https://reneeskincare.com/services',
+		type: 'website',
+	},
+};
 
 export default function Services() {
 	const services = [
