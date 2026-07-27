@@ -1,13 +1,14 @@
 export const localBusinessSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'LocalBusiness',
-	'@id': 'https://reneeskincare.com',
+	'@id': 'https://lysbyrenee.com',
 	name: 'Renée Skin Care',
-	description: 'Licensed aesthetician offering advanced skincare treatments including facials, HydraFacial, and chemical peels.',
-	url: 'https://reneeskincare.com',
+	description:
+		'Licensed aesthetician offering advanced skincare treatments including facials, HydraFacial, and chemical peels.',
+	url: 'https://lysbyrenee.com',
 	telephone: '(555) 123-4567',
-	email: 'hello@reneeskincare.com',
-	image: 'https://reneeskincare.com/skincare.jpg',
+	email: 'hello@lysbyrenee.com',
+	image: 'https://lysbyrenee.com/skincare.jpg',
 	priceRange: '$175 - $375',
 	areaServed: {
 		'@type': 'City',
@@ -24,8 +25,8 @@ export const organizationSchema = {
 	'@context': 'https://schema.org',
 	'@type': 'Organization',
 	name: 'Renée Skin Care',
-	url: 'https://reneeskincare.com',
-	logo: 'https://reneeskincare.com/logo.png',
+	url: 'https://lysbyrenee.com',
+	logo: 'https://lysbyrenee.com/logo.png',
 	description: 'Advanced skincare services by a licensed aesthetician',
 	founder: {
 		'@type': 'Person',

@@ -116,10 +116,10 @@ export default function Contact() {
 						</p>
 						<p className='text-lg font-light text-white tracking-wide'>
 							<a
-								href='mailto:hello@reneeskincare.com'
+								href='mailto:hello@lysbyrenee.com'
 								className='hover:opacity-80 transition'
 							>
-								hello@reneeskincare.com
+								hello@lysbyrenee.com
 							</a>
 						</p>
 					</div>
@@ -207,7 +207,7 @@ export default function Contact() {
 				<div className='max-w-7xl mx-auto text-neutral-800 tracking-wider'>
 					<div className='mb-8'>
 						<p className='text-md text-neutral-800'>
-							Email: hello@lysbyrenee.com
+							Email: <a href='mailto:hello@lysbyrenee.com' className='hover:opacity-80 transition'>hello@lysbyrenee.com</a>
 						</p>
 						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
 					</div>
