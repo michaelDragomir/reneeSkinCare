@@ -128,18 +128,18 @@ export default function Contact() {
 							className='text-lg font-light text-[#4a4a48] tracking-wide'
 							style={{ fontFamily: 'var(--font-raleway-500)' }}
 						>
-							(555) 123-4567
-						</p>
-						<p
-							className='text-lg font-light text-[#4a4a48] tracking-wide'
-							style={{ fontFamily: 'var(--font-raleway-500)' }}
-						>
 							<a
 								href='mailto:hello@lysbyrenee.com'
 								className='hover:opacity-80 transition'
 							>
 								hello@lysbyrenee.com
 							</a>
+						</p>
+						<p
+							className='text-lg font-light text-[#4a4a48] tracking-wide'
+							style={{ fontFamily: 'var(--font-raleway-500)' }}
+						>
+							(555) 123-4567
 						</p>
 					</div>
 				</div>
