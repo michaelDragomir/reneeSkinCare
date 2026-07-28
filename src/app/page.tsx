@@ -82,7 +82,7 @@ export default function Home() {
 					{/* Content */}
 					<div className='space-y-6 p-4 text-center'>
 						<h1
-							className='text-4xl md:text-5xl leading-tight tracking-wide text-[#745e4c]'
+							className='text-4xl md:text-5xl leading-tight tracking-wide text-[#745e4c] mb-1'
 							style={{
 								fontFamily: 'var(--font-bodoni-moda)',
 								fontStyle: 'italic',
@@ -92,7 +92,7 @@ export default function Home() {
 							Love Your Skin by Renee
 						</h1>
 
-						<p className='text-lg font-light text-neutral-800 tracking-wide'>
+						<p className='text-lg font-light text-neutral-800 tracking-wide text-[#745e4c]'>
 							Licensed Aesthetician | Integrative Skincare Specialist
 						</p>
 
