@@ -66,7 +66,7 @@ export default function Contact() {
 			<SchemaScript schema={breadcrumbs} />
 			{/* Header */}
 			<header className='border-b border-[#745e4c]'>
-				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
+				<nav className='max-w-7xl mx-auto px-6 py-2 flex items-center justify-between'>
 					<Link href='/' className='hover:opacity-80 transition'>
 						<Image
 							src='/logo.png'
@@ -199,7 +199,7 @@ export default function Contact() {
 						<button
 							type='submit'
 							disabled={loading}
-							className='bg-[#8b8880] hover:bg-[#2e2e2e] disabled:opacity-50 transition text-white font-light px-8 py-3 uppercase tracking-wider rounded-sm cursor-pointer'
+							className='bg-[#745e4c] hover:opacity-80 transition text-white font-light px-8 py-3 uppercase tracking-wider rounded-sm cursor-pointer'
 						>
 							{loading ? 'Sending...' : 'Send Message'}
 						</button>

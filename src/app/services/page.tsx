@@ -66,7 +66,7 @@ export default function Services() {
 			<SchemaScript schema={breadcrumbs} />
 			{/* Header */}
 			<header className='border-b border-[#745e4c]'>
-				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
+				<nav className='max-w-7xl mx-auto px-6 py-2 flex items-center justify-between'>
 					<Link href='/' className='hover:opacity-80 transition'>
 						<Image
 							src='/logo.png'

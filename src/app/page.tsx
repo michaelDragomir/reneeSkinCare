@@ -28,7 +28,7 @@ export default function Home() {
 			<SchemaScript schema={breadcrumbs} />
 			{/* Header */}
 			<header className='border-b border-[##745e4c]'>
-				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
+				<nav className='max-w-7xl mx-auto px-6 py-2 flex items-center justify-between'>
 					<Link href='/'>
 						<Image
 							src='/logo.png'
@@ -92,7 +92,7 @@ export default function Home() {
 							Love Your Skin by Renee
 						</h1>
 
-						<p className='text-lg font-light text-neutral-500 tracking-wide'>
+						<p className='text-lg font-light text-neutral-500 tracking-wider'>
 							Licensed Aesthetician | Integrative Skincare Specialist
 						</p>
 
@@ -128,13 +128,13 @@ export default function Home() {
 			{/* Testimonial Section */}
 			<section className='bg-[#eddbd2] py-10 px-6'>
 				<div className='max-w-4xl mx-auto text-center'>
-					<p className='font-serif text-3xl italic font-light leading-relaxed text-[#4a4a48] mb-6 tracking-wide'>
+					<p className='font-serif text-3xl italic font-light leading-relaxed text-[#4a4a48] mb-2 tracking-wide'>
 						&ldquo;My clients are extremely loyal due to exemplary results,
 						customer service and personal attention unique to each
 						client.&rdquo;
 					</p>
 					<p className='text-sm font-light text-[#4a4a48] uppercase tracking-wide'>
-						— Renée, Licensed Aesthetician
+						— Renee
 					</p>
 				</div>
 			</section>
