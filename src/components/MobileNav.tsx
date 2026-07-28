@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navLinks = [
 	{ href: '/', label: 'Home' },
@@ -71,13 +72,19 @@ export function MobileNav() {
 
 						<div className='relative z-10 w-full h-full bg-neutral-200 flex flex-col'>
 							{/* Header */}
-							<div className='flex items-center justify-between px-6 py-6 border-b border-neutral-300'>
-								<h2 className='font-serif text-lg font-light text-[#4a4a48]'>
-									Love Your Skin by Renee
-								</h2>
+							<div className='flex items-center justify-between px-6 py-4 border-b border-[#745e4c]'>
+								<Link href='/' onClick={close}>
+									<Image
+										src='/logo.png'
+										alt='Love Your Skin by Renee'
+										width={140}
+										height={80}
+										className='h-12 w-auto'
+									/>
+								</Link>
 								<button
 									onClick={close}
-									className='text-4xl text-[#4a4a48] hover:opacity-60 transition'
+									className='text-4xl text-[#4a4a48] hover:opacity-60 transition text-[#745e4c]'
 									aria-label='Close menu'
 								>
 									×
@@ -90,7 +97,7 @@ export function MobileNav() {
 									<Link
 										key={link.href}
 										href={link.href}
-										className='font-serif text-4xl font-light text-[#4a4a48] transition hover:opacity-60'
+										className='font-serif text-4xl font-light text-[#4a4a48] transition hover:opacity-60 text-[#745e4c]'
 										onClick={close}
 									>
 										{link.label}
@@ -99,7 +106,7 @@ export function MobileNav() {
 							</nav>
 						</div>
 					</div>,
-					document.body
+					document.body,
 				)}
 		</>
 	);
