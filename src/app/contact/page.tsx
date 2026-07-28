@@ -228,16 +228,16 @@ export default function Contact() {
 						className='mb-8'
 						style={{ fontFamily: 'var(--font-raleway-500)' }}
 					>
-						<p className='text-md text-neutral-800'>
+						<p className='text-md text-[#745e4c]'>
 							Email:{' '}
 							<a
 								href='mailto:hello@lysbyrenee.com'
-								className='hover:opacity-80 transition'
+								className='hover:opacity-80 transition text-[#745e4c]'
 							>
 								hello@lysbyrenee.com
 							</a>
 						</p>
-						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
+						<p className='text-md text-[#745e4c]'>Phone: (555) 123-4567</p>
 					</div>
 					<div
 						className='border-t border-[#b5a690] pt-6 text-xs text-neutral-800'

@@ -27,9 +27,9 @@ export default function Home() {
 		<div className='min-h-screen bg-[#f5f3f0] text-[#4a4a48]'>
 			<SchemaScript schema={breadcrumbs} />
 			{/* Header */}
-			<header className='border-b border-[#c9a8a8]'>
+			<header className='border-b border-[##745e4c]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
-					<Link href='/' className='hover:opacity-80 transition'>
+					<Link href='/'>
 						<Image
 							src='/logo.png'
 							alt='Love Your Skin by Renee'
@@ -39,22 +39,22 @@ export default function Home() {
 						/>
 					</Link>
 					{/* Desktop Nav */}
-					<div className='hidden md:flex gap-8 tracking-wider'>
+					<div className='hidden md:flex gap-8 tracking-wider text-[#745e4c]'>
 						<Link
 							href='/'
-							className='text-md font-light hover:opacity-60 transition'
+							className='text-md font-light hover:opacity-60 transition text-[#745e4c]'
 						>
 							Home
 						</Link>
 						<Link
 							href='/services'
-							className='text-md font-light hover:opacity-60 transition'
+							className='text-md font-light hover:opacity-60 transition text-[#745e4c]'
 						>
 							Services
 						</Link>
 						<Link
 							href='/contact'
-							className='text-md font-light hover:opacity-60 transition'
+							className='text-md font-light hover:opacity-60 transition text-[#745e4c]'
 						>
 							Contact
 						</Link>
@@ -82,7 +82,7 @@ export default function Home() {
 					{/* Content */}
 					<div className='space-y-6 p-4 text-center'>
 						<h1
-							className='text-4xl md:text-5xl leading-tight tracking-wide'
+							className='text-4xl md:text-5xl leading-tight tracking-wide text-[#745e4c]'
 							style={{
 								fontFamily: 'var(--font-bodoni-moda)',
 								fontStyle: 'italic',
@@ -140,28 +140,30 @@ export default function Home() {
 			</section>
 
 			{/* Footer */}
-			<footer className='border-t border-[#b5a690] bg-[#f5f3f0] py-12 px-6 text-center text-neutral-800'>
+			<footer className='border-t border-[#745e4c] bg-[#f5f3f0] py-12 px-6 text-center text-neutral-800'>
 				<div className='max-w-7xl mx-auto text-neutral-800 tracking-wider'>
 					<div
-						className='mb-8'
+						className='mb-8 text-[#745e4c]'
 						style={{ fontFamily: 'var(--font-raleway-500)' }}
 					>
-						<p className='text-md text-neutral-800'>
+						<p className='text-md text-[#745e4c]'>
 							Email:{' '}
 							<a
 								href='mailto:hello@lysbyrenee.com'
-								className='hover:opacity-80 transition'
+								className='hover:opacity-80 transition text-[#745e4c]'
 							>
 								hello@lysbyrenee.com
 							</a>
 						</p>
-						<p className='text-md text-neutral-800'>Phone: (555) 123-4567</p>
+						<p className='text-md text-[#745e4c]'>Phone: (555) 123-4567</p>
 					</div>
 					<div
-						className='border-t border-[#b5a690] pt-6 text-xs text-neutral-800'
+						className='border-t border-[#745e4c] pt-6 text-xs text-neutral-800'
 						style={{ fontFamily: 'var(--font-raleway-500)' }}
 					>
-						<p>&copy; 2026 Love Your Skin by Renee. All rights reserved.</p>
+						<p className='text-[#745e4c]'>
+							&copy; 2026 Love Your Skin by Renee. All rights reserved.
+						</p>
 					</div>
 				</div>
 			</footer>
