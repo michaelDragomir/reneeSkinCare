@@ -65,7 +65,7 @@ export default function Contact() {
 		<div className='min-h-screen bg-[#f5f3f0] text-[#4a4a48]'>
 			<SchemaScript schema={breadcrumbs} />
 			{/* Header */}
-			<header className='border-b border-[#c4b5a0]'>
+			<header className='border-b border-[#745e4c]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
 					<Link href='/' className='hover:opacity-80 transition'>
 						<Image
@@ -156,7 +156,7 @@ export default function Contact() {
 							value={formData.name}
 							onChange={handleChange}
 							required
-							className='w-full px-4 py-3 border border-[#c4b5a0] bg-white font-light focus:outline-none focus:ring-2 focus:ring-[#a8b5a3] rounded-sm'
+							className='w-full px-4 py-3 border border-[#745e4c] bg-white font-light focus:outline-none focus:ring-2 focus:ring-[#a8b5a3] rounded-sm'
 						/>
 					</div>
 
@@ -168,7 +168,7 @@ export default function Contact() {
 							value={formData.email}
 							onChange={handleChange}
 							required
-							className='w-full px-4 py-3 border border-[#c4b5a0] bg-white font-light focus:outline-none focus:ring-2 focus:ring-[#a8b5a3] rounded-sm'
+							className='w-full px-4 py-3 border border-[#745e4c] bg-white font-light focus:outline-none focus:ring-2 focus:ring-[#a8b5a3] rounded-sm'
 						/>
 					</div>
 
@@ -179,7 +179,7 @@ export default function Contact() {
 							name='subject'
 							value={formData.subject}
 							onChange={handleChange}
-							className='w-full px-4 py-3 border border-[#c4b5a0] bg-white font-light focus:outline-none focus:ring-2 focus:ring-[#a8b5a3] rounded-sm'
+							className='w-full px-4 py-3 border border-[#745e4c] bg-white font-light focus:outline-none focus:ring-2 focus:ring-[#a8b5a3] rounded-sm'
 						/>
 					</div>
 
@@ -191,7 +191,7 @@ export default function Contact() {
 							onChange={handleChange}
 							required
 							rows={6}
-							className='w-full px-4 py-3 border border-[#c4b5a0] bg-white font-light focus:outline-none focus:ring-2 focus:ring-[#a8b5a3] rounded-sm'
+							className='w-full px-4 py-3 border border-[#745e4c] bg-white font-light focus:outline-none focus:ring-2 focus:ring-[#a8b5a3] rounded-sm'
 						/>
 					</div>
 

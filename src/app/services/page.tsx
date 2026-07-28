@@ -65,7 +65,7 @@ export default function Services() {
 			))}
 			<SchemaScript schema={breadcrumbs} />
 			{/* Header */}
-			<header className='border-b border-[#c4b5a0]'>
+			<header className='border-b border-[#745e4c]'>
 				<nav className='max-w-7xl mx-auto px-6 py-4 flex items-center justify-between'>
 					<Link href='/' className='hover:opacity-80 transition'>
 						<Image
@@ -150,7 +150,7 @@ export default function Services() {
 									>
 										{service.name}
 									</h2>
-									<p className='font-serif text-2xl md:text-3xl font-light text-[#c9a8a8] flex-shrink-0'>
+									<p className='font-serif text-2xl md:text-3xl font-light text-[#745e4c] flex-shrink-0'>
 										{service.price}
 									</p>
 								</div>
@@ -178,7 +178,7 @@ export default function Services() {
 									{service.duration}
 								</span>
 							</div>
-							<div className='border-b border-[#c9a8a8] border-opacity-30 my-4' />
+							<div className='border-b border-[#745e4c] border-opacity-30 my-4' />
 							<p
 								className='text-sm md:text-base font-light leading-relaxed text-[#4a4a48] tracking-wide'
 								style={{ fontFamily: 'var(--font-raleway-500)' }}
