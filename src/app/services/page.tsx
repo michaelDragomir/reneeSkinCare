@@ -142,10 +142,10 @@ export default function Services() {
 							key={index}
 							className='bg-white bg-opacity-40 rounded-lg p-6 md:p-8'
 						>
-							<div className='mb-4'>
+							<div className='mb-2'>
 								<div className='flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 md:gap-4 mb-2'>
 									<h2
-										className='font-serif text-xl md:text-2xl font-light'
+										className='font-serif text-xl md:text-2xl font-light text-[#745e4c]'
 										style={{ fontFamily: 'var(--font-raleway-500)' }}
 									>
 										{service.name}
@@ -164,13 +164,13 @@ export default function Services() {
 									{service.subtitle}
 								</p>
 							</div>
-							<div className='flex items-center gap-2 mb-4'>
-								<span
+							<div className='flex items-center gap-2 mb-2'>
+								{/* <span
 									className='text-xs font-light text-[#8b888] tracking-wid uppercase'
 									style={{ fontFamily: 'var(--font-raleway-500)' }}
 								>
 									Duration:
-								</span>
+								</span> */}
 								<span
 									className='text-sm font-light text-[#8b888]'
 									style={{ fontFamily: 'var(--font-raleway-500)' }}
