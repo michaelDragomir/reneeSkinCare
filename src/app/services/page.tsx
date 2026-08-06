@@ -8,12 +8,23 @@ import { servicesSchema, breadcrumbSchema } from '@/lib/schema';
 export const metadata: Metadata = {
 	title: 'Services & Pricing | Love Your Skin by Renee',
 	description:
-		'Professional skincare treatments including facials, HydraFacial, chemical peels, and intensive treatments. Custom solutions for all skin types.',
+		'Professional skincare treatments including customized facials, dermaplane, microneedling, and intensive treatments. Custom solutions for all skin types.',
 	openGraph: {
-		title: 'Services & Pricing',
+		title: 'Services & Pricing | Love Your Skin by Renee',
 		description: 'Professional skincare treatments tailored to your skin.',
-		url: 'https://lysbyrenee.com/services',
+		url: 'https://www.lysbyrenee.com/services',
 		type: 'website',
+		images: [
+			{
+				url: 'https://www.lysbyrenee.com/logo.png',
+				width: 875,
+				height: 499,
+				alt: 'Love Your Skin by Renee logo',
+			},
+		],
+	},
+	alternates: {
+		canonical: 'https://www.lysbyrenee.com/services',
 	},
 };
 
@@ -113,7 +124,7 @@ export default function Services() {
 						className='text-5xl text-[#4a4a48] mb-4'
 						style={{ fontFamily: 'var(--font-bodoni-moda-regular)' }}
 					>
-						Services & Pricing
+						Signature Treatments
 					</h1>
 					<p
 						className='text-md md:text-lg font-light text-[#4a4a48] opacity-90 whitespace-nowrap'
@@ -126,16 +137,6 @@ export default function Services() {
 
 			{/* Services Section */}
 			<main className='max-w-4xl mx-auto px-6 py-16'>
-				<h1
-					className='font-serif text-4xl font-light mb-12 text-center md:text-left text-[#745e4c]'
-					style={{
-						fontFamily: 'var(--font-bodoni-moda)',
-						fontStyle: 'italic',
-					}}
-				>
-					Facials & Clinical Treatments
-				</h1>
-
 				<div className='space-y-8'>
 					{services.map((service, index) => (
 						<div

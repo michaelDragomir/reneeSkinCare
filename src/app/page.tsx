@@ -10,11 +10,22 @@ export const metadata: Metadata = {
 	description:
 		'Discover personalized skincare treatments with Renée, a licensed aesthetician with 25+ years of experience. Specializing in facials, medical-grade treatments, and holistic skincare.',
 	openGraph: {
-		title: 'Love your Skin by Renee',
+		title: 'Love Your Skin by Renee',
 		description:
 			'Advanced skincare treatments with personalized care and proven techniques.',
-		url: 'https://lysbyrenee.com',
+		url: 'https://www.lysbyrenee.com',
 		type: 'website',
+		images: [
+			{
+				url: 'https://www.lysbyrenee.com/facial.png',
+				width: 500,
+				height: 500,
+				alt: 'Renée, Licensed Aesthetician specializing in advanced skincare',
+			},
+		],
+	},
+	alternates: {
+		canonical: 'https://www.lysbyrenee.com',
 	},
 };
 

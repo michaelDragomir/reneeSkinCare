@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lysbyrenee.com/sitemap.xml
+Sitemap: https://www.lysbyrenee.com/sitemap.xml

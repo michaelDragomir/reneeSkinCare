@@ -50,8 +50,11 @@ export const metadata: Metadata = {
 	icons: {
 		icon: {
 			url: '/favicon.ico',
-			// type: 'image/png',
 		},
+	},
+	metadataBase: new URL('https://www.lysbyrenee.com'),
+	alternates: {
+		canonical: 'https://www.lysbyrenee.com',
 	},
 };
 
