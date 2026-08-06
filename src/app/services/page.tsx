@@ -219,7 +219,15 @@ export default function Services() {
 								hello@lysbyrenee.com
 							</a>
 						</p>
-						<p className='text-md text-[#745e4c] font-lora'>Phone: (858) 663-9538</p>
+						<p className='text-md text-[#745e4c]'>
+							Phone:{' '}
+							<span
+								style={{ fontFamily: 'var(--font-bodoni-moda)' }}
+								className='tracking-widest'
+							>
+								(858) 663-9538
+							</span>
+						</p>
 					</div>
 					<div
 						className='border-t border-[#745e4c] pt-6 text-xs text-neutral-800'

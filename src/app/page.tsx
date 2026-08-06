@@ -108,7 +108,7 @@ export default function Home() {
 						</p>
 
 						<div
-							className='space-y-4 text-lg text-neutral-800 tracking-wide leading-relaxed text-neutral-200'
+							className='space-y-4 text-lg text-neutral-800 tracking-wide leading-relaxed'
 							style={{ fontFamily: 'var(--font-raleway)' }}
 						>
 							<p>
@@ -160,8 +160,14 @@ export default function Home() {
 								hello@lysbyrenee.com
 							</a>
 						</p>
-						<p className='text-md text-[#745e4c] font-lora'>
-							Phone: (858) 663-9538
+						<p className='text-md text-[#745e4c]'>
+							Phone:{' '}
+							<span
+								style={{ fontFamily: 'var(--font-bodoni-moda)' }}
+								className='tracking-widest'
+							>
+								(858) 663-9538
+							</span>
 						</p>
 					</div>
 					<div
