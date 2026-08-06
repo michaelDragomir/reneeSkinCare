@@ -4,15 +4,15 @@ export const localBusinessSchema = {
 	'@id': 'https://lysbyrenee.com',
 	name: 'Love Your Skin by Renee',
 	description:
-		'Licensed aesthetician offering advanced skincare treatments including facials, HydraFacial, and chemical peels.',
+		'Licensed aesthetician offering advanced skincare treatments including customized facials, dermaplane facials, microneedling, and specialized skin treatments.',
 	url: 'https://lysbyrenee.com',
 	telephone: '(858) 663-9538',
 	email: 'hello@lysbyrenee.com',
 	image: 'https://lysbyrenee.com/facial.png',
-	priceRange: '$175 - $375',
+	priceRange: '$100 - $250+',
 	areaServed: {
 		'@type': 'City',
-		name: 'San Francisco',
+		name: 'San Diego',
 	},
 	sameAs: [
 		// Add your social media URLs here when available
@@ -44,53 +44,53 @@ export const servicesSchema = [
 	{
 		'@context': 'https://schema.org',
 		'@type': 'Service',
-		name: 'The Works — Signature Intensive',
+		name: 'Customized Facial',
 		description:
-			'A clinically specified customized treatment addressing and correcting your specific skincare needs. Includes dermal infusion, peels, extractions, oxygen therapy, microcurrent, customized mask, and modifications according to your skin type.',
-		duration: 'PT2H',
-		price: '375',
-		priceCurrency: 'USD',
-		provider: {
-			'@type': 'LocalBusiness',
-			name: 'Love Your Skin by Renee',
-		},
-	},
-	{
-		'@context': 'https://schema.org',
-		'@type': 'Service',
-		name: 'Classic Facial — Signature Treatment',
-		description:
-			'A comprehensive facial treatment tailored to your skin type. Includes cleansing, exfoliation, extractions, massage, serums, and a customized mask to address your specific concerns.',
-		duration: 'PT1H30M',
-		price: '225',
-		priceCurrency: 'USD',
-		provider: {
-			'@type': 'LocalBusiness',
-			name: 'Love Your Skin by Renee',
-		},
-	},
-	{
-		'@context': 'https://schema.org',
-		'@type': 'Service',
-		name: 'HydraFacial — Vortex Fusion',
-		description:
-			'A non-invasive, non-chemical hydradermabrasion treatment. Uses water, serums, and suction to cleanse, extract, and hydrate the skin. Leaves skin glowing and refreshed.',
-		duration: 'PT45M',
-		price: '175',
-		priceCurrency: 'USD',
-		provider: {
-			'@type': 'LocalBusiness',
-			name: 'Love Your Skin by Renee',
-		},
-	},
-	{
-		'@context': 'https://schema.org',
-		'@type': 'Service',
-		name: 'Chemical Peel — Customized Strength',
-		description:
-			'A professional chemical peel customized to your skin concerns. Helps improve texture, tone, fine lines, and hyperpigmentation. Includes pre and post-care instructions.',
+			'A clinically designed treatment tailored entirely to your skin\'s specific needs. This fully customized facial targets your specific skincare goals through a clinical, results-driven approach. Features microdermabrasion, targeted enzyme peels, extractions, and a custom-blended mask.',
 		duration: 'PT1H',
-		price: '200',
+		price: '125',
+		priceCurrency: 'USD',
+		provider: {
+			'@type': 'LocalBusiness',
+			name: 'Love Your Skin by Renee',
+		},
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'Service',
+		name: 'Express Facial',
+		description:
+			'A 45-minute express facial perfect for busy schedules. Designed to deeply hydrate, refresh, and revitalize your skin when you need a little extra love on the go.',
+		duration: 'PT45M',
+		price: '100',
+		priceCurrency: 'USD',
+		provider: {
+			'@type': 'LocalBusiness',
+			name: 'Love Your Skin by Renee',
+		},
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'Service',
+		name: 'Dermaplane Facial',
+		description:
+			'A 75-minute facial with zero downtime. A gentle removal of unwanted facial hair and dead skin followed by a customized facial treatment. Instantly brightens your complexion and leaves your face incredibly soft and perfectly prepped for makeup application.',
+		duration: 'PT1H15M',
+		price: '155',
+		priceCurrency: 'USD',
+		provider: {
+			'@type': 'LocalBusiness',
+			name: 'Love Your Skin by Renee',
+		},
+	},
+	{
+		'@context': 'https://schema.org',
+		'@type': 'Service',
+		name: 'Microneedling',
+		description:
+			'A results-driven treatment designed to improve skin health at a deeper level. Uses precision controlled micro-injuries to activate the skin\'s natural repair process. Clinically proven to reduce acne scars, fine lines, hyperpigmentation, and uneven texture. Series of 3 to 6 recommended.',
+		duration: 'PT1H',
+		price: '250',
 		priceCurrency: 'USD',
 		provider: {
 			'@type': 'LocalBusiness',
