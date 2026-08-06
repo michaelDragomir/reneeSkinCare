@@ -6,7 +6,7 @@ export const localBusinessSchema = {
 	description:
 		'Licensed aesthetician offering advanced skincare treatments including facials, HydraFacial, and chemical peels.',
 	url: 'https://lysbyrenee.com',
-	telephone: '(555) 123-4567',
+	telephone: '(858) 663-9538',
 	email: 'hello@lysbyrenee.com',
 	image: 'https://lysbyrenee.com/facial.png',
 	priceRange: '$175 - $375',
@@ -35,7 +35,7 @@ export const organizationSchema = {
 	},
 	contactPoint: {
 		'@type': 'ContactPoint',
-		telephone: '(555) 123-4567',
+		telephone: '(858) 663-9538',
 		contactType: 'Customer Service',
 	},
 };

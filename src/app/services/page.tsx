@@ -20,36 +20,36 @@ export const metadata: Metadata = {
 export default function Services() {
 	const services = [
 		{
-			name: 'The Works',
+			name: 'Customized Facial',
 			subtitle: 'Signature Intensive',
-			duration: '2 HOURS',
-			price: '$375',
+			duration: '60 minutes',
+			price: '$125+',
 			description:
-				'A clinically specified customized treatment addressing and correcting your specific skincare needs. Includes dermal infusion, peels, extractions, oxygen therapy, microcurrent, customized mask, and modifications according to your skin type.',
+				"A clinically designed treatment tailored entirely to your skin's specific needs. Your session is built from the ground up to correct concerns and enhance your natural complexion.  This fully customized facial targets your specific skincare goals through a clinical, results-driven approach. Depending on what your skin needs that day, your session may feature microdermabrasion, targeted enzyme peels, extractions, and a custom-blended mask—leaving you completely relaxed and glowing.",
 		},
 		{
-			name: 'Classic Facial',
+			name: 'Express Facial',
 			subtitle: 'Signature Treatment',
-			duration: '1.5 HOURS',
-			price: '$225',
+			duration: '45 minutes',
+			price: '$100',
 			description:
-				'A comprehensive facial treatment tailored to your skin type. Includes cleansing, exfoliation, extractions, massage, serums, and a customized mask to address your specific concerns.',
+				'Short on time but still want that signature glow? This 45-minute express facial is the perfect pick-me-up for busy schedules. Enjoy a quick, highly effective treatment designed to deeply hydrate, refresh, and revitalize your skin when you need a little extra love on the go.',
 		},
 		{
-			name: 'HydraFacial',
+			name: 'Dermaplane Facial',
+			subtitle: 'Signature Treatment',
+			duration: '75 minutes',
+			price: '$155',
+			description:
+				'Experience the ultimate glow with zero downtime. This 75-minute facial will leave your skin radiant! A gentle removal of unwanted facial hair and dead skin is followed by a customized facial treatment tailored specifically to your needs. Not only does this service instantly brighten your complexion, but it also allows your personalized serums to penetrate deeper, leaving your face incredibly soft and perfectly prepped for seamless makeup application.',
+		},
+		{
+			name: 'Microneedling',
 			subtitle: 'Vortex Fusion',
-			duration: '45 MINUTES',
-			price: '$175',
+			duration: '60 MINUTES',
+			price: '$250+',
 			description:
-				'A non-invasive, non-chemical hydradermabrasion treatment. Uses water, serums, and suction to cleanse, extract, and hydrate the skin. Leaves skin glowing and refreshed.',
-		},
-		{
-			name: 'Chemical Peel',
-			subtitle: 'Customized Strength',
-			duration: '1 HOUR',
-			price: '$200',
-			description:
-				'A professional chemical peel customized to your skin concerns. Helps improve texture, tone, fine lines, and hyperpigmentation. Includes pre and post-care instructions.',
+				'A results-driven treatment designed to improve skin health at a deeper level. Using precision controlled micro-injuries to activate the skin’s natural repair process, significantly boosting collagen and elastic production. Clinically proven to reduce acne scars, fine lines, hyperpigmentation, and uneven texture. This advanced procedure delivers measurable improvement in skin firmness, clarity, and overall rejuvenation. For optimum results a series of 3 to 6 is recommended. ',
 		},
 	];
 
@@ -154,7 +154,7 @@ export default function Services() {
 										{service.price}
 									</p>
 								</div>
-								<p
+								{/* <p
 									className='text-sm md:text-base text-[#4a4a48]'
 									style={{
 										fontFamily: 'var(--font-raleway-light)',
@@ -162,7 +162,7 @@ export default function Services() {
 									}}
 								>
 									{service.subtitle}
-								</p>
+								</p> */}
 							</div>
 							<div className='flex items-center gap-2 mb-2'>
 								{/* <span
@@ -218,7 +218,7 @@ export default function Services() {
 								hello@lysbyrenee.com
 							</a>
 						</p>
-						<p className='text-md text-[#745e4c]'>Phone: (555) 123-4567</p>
+						<p className='text-md text-[#745e4c]'>Phone: (858) 663-9538</p>
 					</div>
 					<div
 						className='border-t border-[#745e4c] pt-6 text-xs text-neutral-800'

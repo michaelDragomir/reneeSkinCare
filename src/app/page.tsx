@@ -101,24 +101,23 @@ export default function Home() {
 							style={{ fontFamily: 'var(--font-raleway)' }}
 						>
 							<p>
-								Licensed and practicing skincare since 1996, with advanced
-								training in both medical and holistic skincare. With over 25
-								years of experience working alongside dermatology professionals,
-								I have extensive knowledge in treating problematic and
-								challenging skin conditions.
+								Welcome to Love Your Skin, where skincare is treated as a
+								progressive journey. As an esthetician licensed in California,
+								Nevada, and Utah, I bring over 20 years of experience and
+								advanced training in both medical and holistic treatments.
+								Throughout my career, I&apos;ve had the privilege of working
+								alongside top professionals in dermatology and medical spas,
+								allowing me to blend clinical precision with holistic healing.
 							</p>
 
 							<p>
-								My philosophy blends the best of science and nature to help you
-								achieve healthy, radiant skin. I believe true skin health comes
-								from a balanced approach that combines effective skincare
-								treatments with a healthy lifestyle.
-							</p>
-
-							<p>
-								Through personalized care and proven techniques, my goal is to
-								help you look and feel your best because beautiful skin is more
-								than skin deep.
+								Here, each treatment is designed with intention. I focus on
+								real, visible results through a structured, guided process that
+								supports your skin at every stage. By restoring balance and
+								strengthening your skin&apos;s natural barrier, I improve your
+								overall skin quality over time. Every service is entirely
+								tailored to your current needs, ensuring safe, personalized care
+								that evolves right alongside you.
 							</p>
 						</div>
 					</div>
@@ -129,12 +128,7 @@ export default function Home() {
 			<section className='bg-[#eddbd2] py-10 px-6'>
 				<div className='max-w-4xl mx-auto text-center'>
 					<p className='font-serif text-3xl italic font-light leading-relaxed text-[#4a4a48] mb-2 tracking-wide'>
-						&ldquo;My clients are extremely loyal due to exemplary results,
-						customer service and personal attention unique to each
-						client.&rdquo;
-					</p>
-					<p className='text-sm font-light text-[#4a4a48] uppercase tracking-wide'>
-						— Renee
+						&ldquo;The glow you want starts with the skin you love.&rdquo;
 					</p>
 				</div>
 			</section>
@@ -155,7 +149,7 @@ export default function Home() {
 								hello@lysbyrenee.com
 							</a>
 						</p>
-						<p className='text-md text-[#745e4c]'>Phone: (555) 123-4567</p>
+						<p className='text-md text-[#745e4c]'>Phone: (858) 663-9538</p>
 					</div>
 					<div
 						className='border-t border-[#745e4c] pt-6 text-xs text-neutral-800'
