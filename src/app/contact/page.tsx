@@ -139,7 +139,7 @@ export default function Contact() {
 							className='text-lg font-light text-[#4a4a48] tracking-wide'
 							style={{ fontFamily: 'var(--font-raleway-500)' }}
 						>
-							(555) 123-4567
+							(858) 663-9538
 						</p>
 					</div>
 				</div>
