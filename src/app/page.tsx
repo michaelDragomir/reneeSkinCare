@@ -160,7 +160,7 @@ export default function Home() {
 								hello@lysbyrenee.com
 							</a>
 						</p>
-						<p className='text-md text-[#745e4c] font-mono'>
+						<p className='text-md text-[#745e4c] font-lora'>
 							Phone: (858) 663-9538
 						</p>
 					</div>
