@@ -46,7 +46,7 @@ export default function Services() {
 		{
 			name: 'Microneedling',
 			subtitle: 'Vortex Fusion',
-			duration: '60 MINUTES',
+			duration: '60 minutes',
 			price: '$250+',
 			description:
 				'A results-driven treatment designed to improve skin health at a deeper level. Using precision controlled micro-injuries to activate the skin’s natural repair process, significantly boosting collagen and elastic production. Clinically proven to reduce acne scars, fine lines, hyperpigmentation, and uneven texture. This advanced procedure delivers measurable improvement in skin firmness, clarity, and overall rejuvenation. For optimum results a series of 3 to 6 is recommended. ',
